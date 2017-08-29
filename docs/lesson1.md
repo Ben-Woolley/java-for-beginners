@@ -124,5 +124,5 @@ Right-click and run, the editor makes this really easy!
 * *Bonus: Discover how division works with integers*
 
 ---
-Next Lesson: [Debugging and additional concepts](lesson2.md)
+Next Lesson: [Debugging and additional concepts](lesson2.md)  
 [Homepage](index.md)
