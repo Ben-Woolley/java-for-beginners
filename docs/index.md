@@ -1,4 +1,5 @@
 # Welcome to Java for Beginners
+![Expedia Code Academy Logo](assets/logo.png)
 
 ## Table of Contents
 * [Lesson 1 - Introduction and basic java concepts](lesson1.md)

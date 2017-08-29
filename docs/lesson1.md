@@ -104,17 +104,17 @@ e.g. `int num = a + (b – c);`
 ## Some code to start
 ```java
 public class SillyEquation {
-  public static void main(String[] args) {
-	int this = 2;
-	int that = 4;
-	int result = this + that;
-	System.out.println("The result is " + result);
-  }
+    public static void main(String[] args) {
+        int that = 2;
+        int theOther = 4;
+        int result = that + theOther;
+        System.out.println("The result is " + result);
+    }
 }
 ```
 
 ## Running your Code
-Right-click and run, the editor makes this really easy!
+Right-click and run ![play](assets/intellij/run.png), the editor makes this really easy!
 
 ## Homework - Experiment with Operators
 * Switch, change, or use new operators in SillyEquation and see what happens.
