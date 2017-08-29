@@ -122,5 +122,5 @@ You can add complexity to your equation by playing around with all the operators
 *Bonus: Have a look at the other operators available*
 
 ---
-Next Lesson: [Logic and making decisions](lesson3.md)
+Next Lesson: [Logic and making decisions](lesson3.md)  
 [Homepage](index.md)
