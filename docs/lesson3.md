@@ -137,5 +137,5 @@ For any other values print “Invalid input!”.
 Experiment with this code in the `main` method and see how different values of choice affect the output of your program.
 
 ---
-Next Lesson: [Logic and making decisions](lesson3.md)  
-[Objects and Classes](lesson4.md)
+Next Lesson: [Objects and Classes](lesson4.md)  
+[Homepage](index.md)
