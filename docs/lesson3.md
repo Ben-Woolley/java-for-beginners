@@ -13,7 +13,7 @@ If all are false, then the answer is false.
 |           | true  | false |
 | ---       | ---   | ---   |
 | **true**  | true  | true  |
-| **false** | true  | false |
+| **false** | true  | false |  
 
 * AND (`&&`)  
 If any are false the answer is false.
