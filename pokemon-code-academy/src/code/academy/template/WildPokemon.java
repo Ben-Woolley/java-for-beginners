@@ -5,11 +5,11 @@ import code.academy.Pokemon;
 class WildPokemon
 {
 
-    static final String PIDGEY = "Brainy Pokemon";
-    static final String CATERPIE = "Vanity Pokemon";
-    static final String MAGICARP = "Clumsy Pokemon";
-    static final String DITTO = "Grouchy Pokemon";
-    static final String SNORLAX = "Hefty Pokemon";
+    static final String PIDGEY = "Pidgey";
+    static final String CATERPIE = "Caterpie";
+    static final String MAGICARP = "Magicarp";
+    static final String DITTO = "Ditto";
+    static final String SNORLAX = "Snorlax";
 
     static Pokemon pidgey = new Pokemon(PIDGEY, 30, 12);
     static Pokemon caterpie = new Pokemon(CATERPIE, 50, 30);
