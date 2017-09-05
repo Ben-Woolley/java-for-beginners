@@ -1,124 +1,73 @@
 package code.academy;
 
-import java.util.List;
-
 public class Main {
 
     public static void main(String[] args) {
+        //TODO WEEK 6
+        /* ------- Step 1: take name input and create a PokemonTrainer with the name ------ */
 
-        System.out.println("What is your name, Pokémon trainer?");
+        // print greeting message
 
-//        String name = UserInputUtil.readString();
-//        PokemonTrainer currentUser = new PokemonTrainer(name);
+        // create PokemonTrainer object
 
-        PokemonTrainer currentUser = new PokemonTrainer(UserInputUtil.readString());
+        //TODO WEEK 6
+        /* ------- Step 2: choose a pokemon as your starter pokemon ------ */
 
-        System.out.println("Hello, " + currentUser.getName() +
-                ". Please select a Pokémon from the list below as your starter Pokemon:");
+        // print message
 
-        final List<Pokemon> startPokemons = StarterPokemon.get();
+        // provide starter pokemon collection
 
-        for (Pokemon pokemon : startPokemons) {
-            System.out.println(startPokemons.indexOf(pokemon) + ". " + pokemon);
-        }
+        // print pokemons from the starter pokemon collection
 
-        Pokemon starterPokemon = StarterPokemon.choosePokemon(UserInputUtil.readInt());
+        // choose a pokemon as your starter pokemon
 
-        currentUser.setStarterPokemon(starterPokemon);
+        // print out all your owned pokemons
 
-        listOwnedPokemon(currentUser);
+        //TODO
+        /* ------- Step 3: going on adventures ------ */
 
-        System.out.println("You are about to go on the Pokémon hunting trip.");
+        // print message
 
-        while(currentUser.getNumberOfPokeballs() > 0 && !currentUser.hasCaughtThemAll()) {
-            move(currentUser);
-        }
+        // Introduce goal here
 
-        if (currentUser.getNumberOfPokeballs() == 0) {
-            System.out.println("You've run out of Pokéballs. Exiting the game... See ya!");
-        }
     }
 
-    static void move(PokemonTrainer currentUser) {
+    static void move(int choice) {
+        //TODO complete and enhance method
 
-        listDirection();
-
-        int choice = UserInputUtil.readInt();
+        //read in the user input and put it in a local variable called choice
 
         if (choice == 1) {
             System.out.println("Going left...");
         } else if (choice == 2) {
-            System.out.println("Going forward...");
+            System.out.println("Going straight...");
         } else if (choice == 3) {
             System.out.println("Going right...");
         } else {
             System.out.println("Invalid input");
         }
 
-        if (Math.random() <= 0.5) {
-            System.out.println("Nothing here.");
-            move(currentUser);
-        } else {
-            wildEncounter(currentUser);
-        }
-
+        //generate a random value decide to repeat this step (no Pokemon met)
+        //or call a method that makes the pokemonTrainer to meet a pokemon
     }
 
-    static void wildEncounter(PokemonTrainer currentUser) {
-        Pokemon wildPokemon = WildPokemon.encounter();
-        System.out.println("A wild " + wildPokemon + " has appeared:");
-        System.out.println("1. Fight 2. Run away");
-        if (UserInputUtil.readInt() == 1) {
-            fight(currentUser, wildPokemon);
-        }
+    static void wildPokemonEncounter(PokemonTrainer currentUser) {
+        // TODO Week 8
     }
 
     static void fight(PokemonTrainer currentUser, Pokemon wildPokemon) {
-        System.out.println("You have chosen to fight.");
-        System.out.println("Choose a Pokémon to fight:");
-        final List<Pokemon> ownedPokemon = currentUser.getOwnedPokemon();
-        for (Pokemon pokemon : ownedPokemon) {
-            System.out.println(ownedPokemon.indexOf(pokemon) +".  " + pokemon);
-        }
-        Pokemon chosenPokemon = currentUser.choosePokemon(UserInputUtil.readInt());
-        System.out.println(chosenPokemon + " vs. " + wildPokemon);
-
-        boolean runAway = false;
-        while(wildPokemon.getHealthPoints() > 10) {
-            System.out.println("1. Attack 2. Run away");
-            if (UserInputUtil.readInt() == 1) {
-                wildPokemon.reduceHealth(chosenPokemon.getCombatPower());
-                System.out.println(chosenPokemon + " vs. " + wildPokemon);
-            } else {
-                runAway = true;
-                break;
-            }
-        }
-        if (!runAway) {
-            System.out.println("1. Capture 2. Run away");
-            if (UserInputUtil.readInt() == 1)
-            {
-                currentUser.capture(wildPokemon);
-                System.out.println("You threw a ball at it, the " + wildPokemon + " is captured!");
-                listOwnedPokemon(currentUser);
-                System.out.println("You have " + currentUser.getNumberOfPokeballs() + " Pokéballs left.");
-            }
-        }
-
+        // TODO Week 8
     }
 
     /**
-     * List (print out) all the owned Pokémon given a Pokémon trainer
+     * List (print out) all the owned pokemon given a pokemon trainer
      */
     static void listOwnedPokemon(PokemonTrainer currentUser) {
-        System.out.println("Congratulations, now you have:");
-        for (Pokemon pokemon : currentUser.ownedPokemon) {
-            System.out.println(pokemon);
-        }
+        // TODO Week 6
     }
 
+    // list(print) the direction: 1. Left, 2. Straight, 3. Right
     static void listDirection() {
-        System.out.println("Choose your direction:");
-        System.out.println("1. Left 2. Straight 3. Right");
+        //TODO WEEK 7
     }
 }

@@ -1,4 +1,4 @@
-package code.academy.template;
+package code.academy;
 
 public class Main {
 

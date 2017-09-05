@@ -121,10 +121,10 @@ class StarterPokemonCollection {
 class WildPokemon {
 
  	// create five constants for the names of the five wild    
- 	// Pokemon: pidgey, caterpie, magicarp, ditto, and snorlax
+ 	// Pokemon: pidgey, caterpie, magikarp, ditto, and snorlax
  	// They will be used when creating the wild Pokemon objects
 
- 	// Create five Pokemon objects : pidgey, caterpie, magicarp, ditto, and snorlax
+ 	// Create five Pokemon objects : pidgey, caterpie, magikarp, ditto, and snorlax
  	// tip: the attributes should be static
 
 }

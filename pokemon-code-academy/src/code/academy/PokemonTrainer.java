@@ -1,40 +1,21 @@
 package code.academy;
 
-import java.util.ArrayList;
-
 public class PokemonTrainer
 {
-    String name;
-    int numberOfPokeballs = 1;
-    ArrayList<Pokemon> ownedPokemon = new ArrayList<>();
+    //TODO WEEK 5
+    // name
+    // numberOfPokeballs - start with 10
+    // list of ownedPokemon
 
-    public PokemonTrainer(String trainerName) {
-        name = trainerName;
-    }
+    // constructor that takes the trainer's name - trainerName
 
-    public String getName()
-    {
-        return name;
-    }
-
-    public int getNumberOfPokeballs()
-    {
-        return numberOfPokeballs;
-    }
-
-    public ArrayList<Pokemon> getOwnedPokemon()
-    {
-        return ownedPokemon;
-    }
+    // getters for all the attributes of the trainer
 
     /**
      *  Given an object of type Pokemon, reduce the number of balls by 1 and add the
      *  pokemon to the list of ownedPokemon
      */
     void capture(Pokemon pokemon) {
-        numberOfPokeballs = numberOfPokeballs - 1;
-        ownedPokemon.add(pokemon);
-        pokemon.setCaptured(true);
     }
 
     /**
@@ -48,12 +29,7 @@ public class PokemonTrainer
         // TIP: class ArrayList provides the method size() which can be used to get the total number of items in it
         // TIP: For retrieving an Object from the List, use .get(index)
         // REMEMBER: ArrayList always starts with index 0
-        if (id >= 0 && id < ownedPokemon.size()) {
-            return ownedPokemon.get(id);
-        } else {
-            System.out.println("Invalid ID. The first Pokemon will be chosen!");
-            return ownedPokemon.get(0);
-        }
+        return null;
     }
 
     /**
@@ -61,7 +37,6 @@ public class PokemonTrainer
      * @param pokemon
      */
     void setStarterPokemon(Pokemon pokemon) {
-        ownedPokemon.add(pokemon);
     }
 
 
@@ -71,18 +46,7 @@ public class PokemonTrainer
      * @return true or false
      */
     boolean hasCaughtThemAll() {
-
-        boolean result = ownedPokemon.contains(WildPokemon.pidgey) &&
-                ownedPokemon.contains(WildPokemon.caterpie) &&
-                ownedPokemon.contains(WildPokemon.magicarp) &&
-                ownedPokemon.contains(WildPokemon.ditto) &&
-                ownedPokemon.contains(WildPokemon.snorlax);
-        if (result)
-        {
-            System.out.println("Congratulations, you've caught 'em all!");
-        }
-
-        return result;
+        // TODO Week 8
+        return true;
     }
-
 }
