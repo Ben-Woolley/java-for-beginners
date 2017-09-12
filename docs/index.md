@@ -1,6 +1,7 @@
 # Welcome to Java for Beginners
 
 ## Table of Contents
+* [Setting up Java SDK](java-setup.md)
 * [Setting up IntelliJ IDEA](intellij-setup.md)
 * [Setting up the Pokémon template project](PokemonSetUp.md)
 * [Lesson 1 - Introduction and basic java concepts](lesson1.md)
