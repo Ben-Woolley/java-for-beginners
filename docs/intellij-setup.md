@@ -9,45 +9,45 @@ We will be using the community edition, which can be downloaded for free here:
 [Windows](https://www.jetbrains.com/idea/download/#section=windows)
 [MacOS](https://www.jetbrains.com/idea/download/#section=mac)
 
-![ide-download](assets/intellij-setup/ide-download.png =300x300)
+![ide-download](assets/intellij-setup/ide-download.png)
 
 Click download, and save the file:
-![ide-download2](assets/intellij-setup/ide-download2.png =300x300)
+![ide-download2](assets/intellij-setup/ide-download2.png)
 
 Navigate to where you saved the download, and open the file.
 On MacOS, this box will appear:
-![ide-install](assets/intellij-setup/ide-install.png =300x300)
+![ide-install](assets/intellij-setup/ide-install.png)
 
 Simply drag the icon into the Applications folder, this will complete the installation and should only take a few seconds.
 
 After this, double-click the IntelliJ IDEA CE icon (This can be found via Launchpad on Mac).
 
 This dialog box may appear, continue by clicking "Open".
-![ide-install2](assets/intellij-setup/ide-install2.png =300x300)
+![ide-install2](assets/intellij-setup/ide-install2.png)
 
 Click "Do Not Import Settings" and then OK.
-![ide-settings](assets/intellij-setup/ide-settings.png =300x300
+![ide-settings](assets/intellij-setup/ide-settings.png)
 
 Now, you can choose which colour style you want. (I prefer Darcula)
-[ide-settings2](assets/intellij-setup/ide-settings2.png =300x300)
+[ide-settings2](assets/intellij-setup/ide-settings2.png)
 
 Then click "Next: Keymaps".
 
 Select the "I've never used IDEA before" option
-<img src="assets/intellij-setup/ide-settings3.png" height="300" width="300">
+[ide-settings3](assets/intellij-setup/ide-settings3.png)
 
 Then click "Next: Launcher Script".
 
 Leave the box unchecked, and click "Next: Default Plugins"
-[ide-settings4](assets/intellij-setup/ide-settings4.png =300x300)
+[ide-settings4](assets/intellij-setup/ide-settings4.png)
 
 We can leave these options as they are, and click through to "Next: Featured Plugins"
-[ide-settings5](assets/intellij-setup/ide-settings5.png =300x300)
+[ide-settings5](assets/intellij-setup/ide-settings5.png)
 
 We can also leave these options, and can finally click "Start using IntelliJ IDEA"!
-[ide-settings6](assets/intellij-setup/ide-settings6.png =300x300)
+[ide-settings6](assets/intellij-setup/ide-settings6.png)
 
 ## IntelliJ Projects
 
 After setting up, you should now see this screen:
-[ide-project](assets/intellij-setup/ide-project.png =300x300)
+[ide-project](assets/intellij-setup/ide-project.png)
