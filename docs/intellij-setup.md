@@ -34,7 +34,7 @@ Now, you can choose which colour style you want. (I prefer Darcula)
 Then click "Next: Keymaps".
 
 Select the "I've never used IDEA before" option
-[ide-settings3](assets/intellij-setup/ide-settings3.png =300x300)
+<img src="assets/intellij-setup/ide-settings3.png" height="300" width="300">
 
 Then click "Next: Launcher Script".
 
