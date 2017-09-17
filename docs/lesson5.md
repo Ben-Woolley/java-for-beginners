@@ -15,32 +15,14 @@ class PokemonTrainer
 }
 ```
 
-### after
-```java
-class Trainer {
-  String name;
-  int numberOfPokeBalls = 10;
-  List<Pokemon> ownedPokemon = new ArrayList<Pokemon>();
+### After
+[Solution code - Click only after attempting.](lesson5/homework_after.md)
 
-	Trainer(String trainerName) {
-     name = trainerName;
-	}
-
-	String getName() {
-     return name;
-	}
-
-	int getNumberOfPokeBalls() {
-    return numberOfPokeBalls;
-	}
-
-	ArrayList<Pokemon> getOwnedPokemon() {
-    	    return ownedPokemon;
-	}
-}
-```
+---
 
 ## Now let's add some functionality
+First to our Pokemon trainer. We want them to be able to capture and choose between their Pokemon.
+
 ```java
 class Trainer {
   // attributes, constructor and get methods here
@@ -70,30 +52,14 @@ class Trainer {
 }
 ```
 
-## So now we have
-```java
-class Trainer {
-  // attributes, constructor and get methods here
+## So now we have:
+[Solution code - Click only after attempting.](lesson5/trainer_solution.md)
 
-	void capture(Pokemon pokemon) {
-    numberOfPokeBalls = numberOfPokeBalls - 1;
-    ownedPokemon.add(pokemon);
-  }
-
-	void choosePokemon(int id) {
-    if (id >= 0 && id < ownedPokemon.size()) {
-      return ownedPokemon.get(id);
-    } else {
-      System.out.println("Invalid ID. The first Pokemon will be chosen!");
-      return ownedPokemon.get(0);
-    }
-  }
-
-  void setStarterPokemon(Pokemon pokemon) {}
-}
-```
+---
 
 ## Let's create our starter Pokemon collection
+This will be used at the start of our Pokemon adventure.
+
 ```java
 class StarterPokemonCollection {
   // create three Pokemon: Charmander, Bulbasaur, and Squirtle.
@@ -116,7 +82,7 @@ class StarterPokemonCollection {
 }
 ```
 
-## And our wild Pokemon
+## And our Wild Pokemon
 ```java
 class WildPokemon {
 
@@ -127,12 +93,13 @@ class WildPokemon {
  	// Create five Pokemon objects : pidgey, caterpie, magikarp, ditto, and snorlax
  	// tip: the attributes should be static
 
+  // We aren't creating the method to choose between them yet
 }
 ```
 
 # Homework
 No specific homework this time!
-Finish up your classes if you need to and polish them if you can think of any way to improve the logic.
+Finish up your ``class`` files if you need to and polish them if you can think of any way to improve the logic.
 
 ---
 Next Lesson: [Pokémon Code Academy part 2](lesson6.md)  
