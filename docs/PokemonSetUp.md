@@ -1,6 +1,6 @@
 # Setting up the pokemon template
 
-## Downloading the project 
+## Downloading the project
 
 1. Go to the github link and click the green "Clone or download" button
 ![github](assets/pokemonsetup/github.png)
@@ -15,7 +15,7 @@
 ---
 
 ## Importing the project to IntelliJ
- 
+
 1. Open up IntelliJ and click Import Project
 ![openintellij](assets/pokemonsetup/openintellij.png)
 
@@ -39,3 +39,6 @@
 
 8. Now the project is ready to go! You can open up the folders and start coding away :)
 ![project](assets/pokemonsetup/project.png)
+
+---
+[Homepage](index.md)

@@ -53,6 +53,21 @@ class WildPokemon
 }
 ```
 
+---
+
+## We can now work on the core of our Pokemon game
+Today we will be working on `Main.class`, creating the introduction and setup for our journey to becoming a Pokemon master!.
+
+The outline of what we're doing is outlined in the file itself:
+* Greet the user and take their name as an input.
+* Set up the story and let the user choose their Pokemon.
+* Highlight the user's choice by printing a list of their Pokemon.
+
+Open `Main.class` and let's go!   
+We have given you `UserInputUtil`, which lets you take user input from the command line.
+
+---
+
 # Homework
 The trainer doesn't know how to move yet, let's sort that.
 ```java
@@ -64,8 +79,6 @@ static void move() {
   */
 }
 ```
-
-<!-- TODO Main class portion -->
 
 ---
 Next Lesson: [Pokémon Code Academy part 3](lesson7.md)  

@@ -29,3 +29,6 @@ Once the installation finishes, you should see this page:
 
 5. To test that the installation has been successful, you can open a Terminal (on OSX) or Command Prompt (on Windows) and type 'java -version':
 ![java-version](assets/java-setup/java-version.png)
+
+---
+[Homepage](index.md)

@@ -22,15 +22,15 @@ On MacOS, this box will appear:
     2. Simply drag the icon into the Applications folder, this will complete the installation and should only take a few seconds.
 
     3. After this, double-click the IntelliJ IDEA CE icon (This can be found via Launchpad on Mac).
-    
+
     This dialog box may appear, continue by clicking "Open".
     ![ide-install2](assets/intellij-setup/ide-install2.png)
-    
+
 ### Windows Installation
     1. Navigate to where you saved the download, and run the ``.exe`` file.
-    
+
     2. Go through the installation wizard, the default settings will be more than fine for our use case.
-    
+
     3. After this, start IntelliJ IDEA CE from the desktop icon or the start menu.
 
 ---
@@ -63,3 +63,6 @@ We can also leave these options.
 
 After setting up, you should now see this screen:
 ![ide-project](assets/intellij-setup/ide-project.png)
+
+---
+[Homepage](index.md)
