@@ -17,11 +17,11 @@ public class Main {
 
         // provide starter pokemon collection
 
-        // print pokemons from the starter pokemon collection
+        // print pokemon from the starter pokemon collection
 
         // choose a pokemon as your starter pokemon
 
-        // print out all your owned pokemons
+        // print out all your owned pokemon
 
         //TODO
         /* ------- Step 3: going on adventures ------ */
@@ -30,42 +30,73 @@ public class Main {
 
         // Introduce goal here
 
+        // Continue exploring while the trainer has not caught
+        //   them all, or can still catch pokemon
+
+        // Congratulate / console player if they win or lose
+
     }
 
-    static void move(Integer choice) {
+    /**
+     * The trainer explores to find pokemon.
+     * They:
+     *   1. choose a direction to go
+     *   2. "move" there, randomly deciding if there is a
+     *        wildPokemonEncounter(trainer)
+     * @param trainer
+     */
+    static void move(PokemonTrainer trainer) {
         //TODO complete and enhance method
 
         //read in the user input and put it in a local variable called choice
+        int choice = -1;
 
-        if (choice == 1) {
-            System.out.println("Going left...");
-        } else if (choice == 2) {
-            System.out.println("Going straight...");
-        } else if (choice == 3) {
-            System.out.println("Going right...");
-        } else {
-            System.out.println("Invalid input");
-        }
+        // Tell user which way they are going
 
         //generate a random value decide to repeat this step (no Pokemon met)
         //or call a method that makes the pokemonTrainer to meet a pokemon
     }
 
-    static void wildPokemonEncounter(PokemonTrainer currentUser) {
-        // TODO Week 8
-    }
-
-    static void fight(PokemonTrainer currentUser, Pokemon wildPokemon) {
+    /**
+     * The trainer encounters a wild Pokemon randomly.
+     * They must choose to run away, ending the encounter.
+     *   Or fight(trainer, wildPokemon)
+     * @param trainer
+     */
+    static void wildPokemonEncounter(PokemonTrainer trainer) {
         // TODO Week 8
     }
 
     /**
-     * List (print out) all the owned pokemon given a pokemon trainer
+     * A fight between a Pokemon trainer and a wild Pokemon.
+     *
+     * 1. Trainer selects a pokemon
+     * 2. The fight begins: while the wildPokemon cannot be caught
+     *      (i.e. its health is too high):
+     *   a. Ask the trainer to attack or run away
+     *     i. If attack, your pokemon attacks it
+     *     ii. If run away, the battle ends
+     *   b. Once the wild Pokemon can be caught:
+     *     i. Ask the trainer to capture or run away
+     *       i. If capture, add the wild Pokemon to your owned Pokemon
+     *       i. If run away, the battle ends
      */
-    static void listOwnedPokemon(PokemonTrainer currentUser) {
+    static void fight(PokemonTrainer trainer, Pokemon wildPokemon) {
+        // TODO Week 8
+    }
+
+    /**
+     * List (print out) all the owned pokemon given a PokemonTrainer
+     */
+    static void listOwnedPokemon(PokemonTrainer trainer) {
         // TODO Week 6
     }
 
+    /**
+     * Guidance for choosing the direction to do into from Integer
+     * e.g. "Choose where to go!"
+     *      "1. Left 2. Straight 3. Right"
+     */
     // list(print) the direction: 1. Left, 2. Straight, 3. Right
     static void listDirection() {
         //TODO WEEK 7

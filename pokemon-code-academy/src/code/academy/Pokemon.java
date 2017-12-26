@@ -2,9 +2,9 @@ package code.academy;
 
 public class Pokemon {
 
-    String name = "Missingno";
-    Integer healthPoints = 20;
-    Integer combatPower = 8;
+    private String name = "Missingno";
+    private Integer healthPoints = 20;
+    private Integer combatPower = 8;
 
     String getName() {
         return name;
