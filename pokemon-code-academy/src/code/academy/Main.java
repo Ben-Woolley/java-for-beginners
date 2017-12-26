@@ -39,6 +39,13 @@ public class Main {
         }
     }
 
+    /**
+     * The trainer explores to find pokemon.
+     * They:
+     *   1. choose a direction to go
+     *   2. "move" there, randomly deciding if there is a
+     *        wildPokemonEncounter(trainer)
+     */
     static void move(PokemonTrainer currentUser) {
 
         listDirection();
@@ -64,6 +71,11 @@ public class Main {
 
     }
 
+    /**
+     * The trainer encounters a wild Pokemon randomly.
+     * They must choose to run away, ending the encounter.
+     *   Or fight(trainer, wildPokemon)
+     */
     static void wildEncounter(PokemonTrainer currentUser) {
         Pokemon wildPokemon = WildPokemon.encounter();
         System.out.println("A wild " + wildPokemon + " has appeared:");
@@ -73,6 +85,20 @@ public class Main {
         }
     }
 
+    /**
+     * A fight between a Pokemon trainer and a wild Pokemon.
+     *
+     * 1. Trainer selects a pokemon
+     * 2. The fight begins: while the wildPokemon cannot be caught
+     *      (i.e. its health is too high):
+     *   a. Ask the trainer to attack or run away
+     *     i. If attack, your pokemon attacks it
+     *     ii. If run away, the battle ends
+     *   b. Once the wild Pokemon can be caught:
+     *     i. Ask the trainer to capture or run away
+     *       i. If capture, add the wild Pokemon to your owned Pokemon
+     *       i. If run away, the battle ends
+     */
     static void fight(PokemonTrainer currentUser, Pokemon wildPokemon) {
         System.out.println("You have chosen to fight.");
         System.out.println("Choose a Pokémon to fight:");
@@ -108,7 +134,7 @@ public class Main {
     }
 
     /**
-     * List (print out) all the owned Pokémon given a Pokémon trainer
+     * List (print out) all the owned pokemon given a PokemonTrainer
      */
     static void listOwnedPokemon(PokemonTrainer currentUser) {
         System.out.println("Congratulations, now you have:");
@@ -117,6 +143,12 @@ public class Main {
         }
     }
 
+    /**
+     * Guidance for choosing the direction to do into from Integer
+     * e.g. "Choose where to go!"
+     *      "1. Left 2. Straight 3. Right"
+     */
+    // list(print) the direction: 1. Left, 2. Straight, 3. Right
     static void listDirection() {
         System.out.println("Choose your direction:");
         System.out.println("1. Left 2. Straight 3. Right");
