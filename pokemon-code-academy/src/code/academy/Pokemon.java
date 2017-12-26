@@ -3,23 +3,23 @@ package code.academy;
 public class Pokemon {
 
     String name = "Missingno";
-    int healthPoints = 20;
-    int combatPower = 8;
+    Integer healthPoints = 20;
+    Integer combatPower = 8;
 
     String getName() {
         return name;
     }
 
-    int getHealthPoints() {
+    Integer getHealthPoints() {
         return healthPoints;
     }
 
-    int getCombatPower() {
+    Integer getCombatPower() {
         return combatPower;
     }
 
 
-    public void reduceHealth(int points) {
+    public void reduceHealth(Integer points) {
         if (healthPoints >= points) {
             healthPoints = healthPoints - points;
         } else {
