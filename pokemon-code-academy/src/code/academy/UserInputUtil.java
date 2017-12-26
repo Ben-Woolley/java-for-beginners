@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 class UserInputUtil
 {
-    static Scanner reader = new Scanner(System.in);
+    private static Scanner reader = new Scanner(System.in);
 
     static String readString() {
         return reader.nextLine();
     }
 
-    static int readInt() {
+    static Integer readInt() {
         return reader.nextInt();
     }
 }

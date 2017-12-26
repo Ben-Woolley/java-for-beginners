@@ -1,6 +1,7 @@
 package code.academy;
 
 import java.util.ArrayList;
+import java.util.List;
 
 class StarterPokemon
 {
@@ -9,10 +10,10 @@ class StarterPokemon
     static Pokemon charmander = new Pokemon("Charmander", 25, 5);
     static Pokemon squirtle = new Pokemon("Squirtle", 23, 7);
 
-    static ArrayList<Pokemon> starterPokemonCollection;
+    static List<Pokemon> starterPokemonCollection;
 
-    static ArrayList<Pokemon> get() {
-        starterPokemonCollection = new ArrayList<Pokemon>();
+    static List<Pokemon> get() {
+        starterPokemonCollection = new ArrayList<>();
         starterPokemonCollection.add(bulbasaur);
         starterPokemonCollection.add(charmander);
         starterPokemonCollection.add(squirtle);
@@ -26,7 +27,7 @@ class StarterPokemon
      * @param id
      * @return
      */
-    static Pokemon choosePokemon(int id) {
+    static Pokemon choosePokemon(Integer id) {
         if (id >= 0 && id < starterPokemonCollection.size()) {
             return starterPokemonCollection.get(id);
         } else {

@@ -3,9 +3,9 @@ package code.academy;
 public class Pokemon {
 
     String name;
-    int healthPoints;
-    int combatPower;
-    boolean isCaptured = false;
+    Integer healthPoints;
+    Integer combatPower;
+    Boolean isCaptured = false;
 
     public Pokemon() {
         name = "Missingno";
@@ -13,7 +13,7 @@ public class Pokemon {
         combatPower = 8;
     }
 
-    public Pokemon(String pokemonName, int pokemonHealthPoints, int pokemonCombatPower) {
+    public Pokemon(String pokemonName, Integer pokemonHealthPoints, Integer pokemonCombatPower) {
         name = pokemonName;
         healthPoints = pokemonHealthPoints;
         combatPower = pokemonCombatPower;
@@ -23,20 +23,20 @@ public class Pokemon {
         return name;
     }
 
-    int getHealthPoints() {
+    Integer getHealthPoints() {
         return healthPoints;
     }
 
-    int getCombatPower() {
+    Integer getCombatPower() {
         return combatPower;
     }
 
-    public void setCaptured(boolean captured)
+    public void setCaptured(Boolean captured)
     {
         isCaptured = captured;
     }
 
-    public void reduceHealth(int points) {
+    public void reduceHealth(Integer points) {
         if (healthPoints >= points) {
             healthPoints = healthPoints - points;
         } else {
