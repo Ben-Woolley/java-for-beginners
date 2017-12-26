@@ -47,7 +47,7 @@ class WildPokemon
             {
                 chosenPokemon = snorlax;
             }
-            if (!chosenPokemon.isCaptured) {
+            if (!chosenPokemon.isCaptured()) {
                 foundAnAvailablePokemon = true;
             }
         }

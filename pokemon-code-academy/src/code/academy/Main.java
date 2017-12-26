@@ -8,9 +8,6 @@ public class Main {
 
         System.out.println("What is your name, Pokémon trainer?");
 
-//        String name = UserInputUtil.readString();
-//        PokemonTrainer currentUser = new PokemonTrainer(name);
-
         PokemonTrainer currentUser = new PokemonTrainer(UserInputUtil.readString());
 
         System.out.println("Hello, " + currentUser.getName() +

@@ -5,7 +5,7 @@ public class Pokemon {
     private String name = "Missingno";
     private Integer healthPoints = 20;
     private Integer combatPower = 8;
-    Boolean isCaptured = false;
+    private Boolean isCaptured = false;
 
     public Pokemon() {
         name = "Missingno";
@@ -29,6 +29,10 @@ public class Pokemon {
 
     Integer getCombatPower() {
         return combatPower;
+    }
+
+    public Boolean isCaptured() {
+        return isCaptured;
     }
 
     public void setCaptured(Boolean captured)
