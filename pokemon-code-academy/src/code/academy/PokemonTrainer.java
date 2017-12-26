@@ -19,13 +19,13 @@ public class PokemonTrainer
     }
 
     /**
-     * Given a number x of int type, if x is greater or equal to 0 and smaller
+     * Given a number x of Integer type, if x is greater or equal to 0 and smaller
      * than the size of ownedPokemon, then return the Pokemon of index x on the list of owned
      * Pokemon. Otherwise, always return the first Pokemon in the list.
      * @param id
      * @return an instance of Pokemon
      */
-    Pokemon choosePokemon(int id) {
+    Pokemon choosePokemon(Integer id) {
         // TIP: class ArrayList provides the method size() which can be used to get the total number of items in it
         // TIP: For retrieving an Object from the List, use .get(index)
         // REMEMBER: ArrayList always starts with index 0
@@ -45,7 +45,7 @@ public class PokemonTrainer
      *
      * @return true or false
      */
-    boolean hasCaughtThemAll() {
+    Boolean hasCaughtThemAll() {
         // TODO Week 8
         return true;
     }

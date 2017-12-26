@@ -32,7 +32,7 @@ public class Main {
 
     }
 
-    static void move(int choice) {
+    static void move(Integer choice) {
         //TODO complete and enhance method
 
         //read in the user input and put it in a local variable called choice
