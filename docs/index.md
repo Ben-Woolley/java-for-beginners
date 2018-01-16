@@ -2,7 +2,6 @@
 
 ## Table of Contents
 ### Setup
-* [Setting up the Java SDK](java-setup.md)
 * [Setting up IntelliJ IDEA](intellij-setup.md)
 * [Setting up the Pokémon template project](PokemonSetUp.md)
  
