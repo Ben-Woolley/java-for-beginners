@@ -1,20 +1,23 @@
-# Setting up the pokemon template
+# Setting up the Java for Beginners project
 
-## Downloading the project
+You have 2 options to download and import the project. Either via IntelliJ itself or manually using the terminal/command line.
 
-1. Go to the github link and click the green "Clone or download" button
-![github](assets/pokemonsetup/github.png)
+## Using IntelliJ
+You can simply use "Check out from Version Control" in IntelliJ. This will automatically clone the project once you provide the URL.
 
-2. Download the project as a zip
-![download](assets/pokemonsetup/download.png)
+You may need to add the Java JDK manually after the project is imported.
 
-3. In your downloads folder you should have a zip folder, unzip it which will create the project folder. If you're using a Mac double click the folder, if you're using Windows right click the folder then click unzip.
-![unzip](assets/pokemonsetup/unzip.png)
-  You can move the folder to wherever you feel like it e.g. Documents, it doesn't have to stay in the Downloads folder.
+## Using the terminal
+### Downloading the project
+We're going to do this from the command line/terminal using **git**. To clone the project:
+* Create a folder somewhere for your git project to exist in e.g. `gitProjects` in your Documents folder.
+* Open a terminal/command line and go to the `gitProjects` folder you just created.
+* Clone the repository here using:
+`git clone https://github.com/Ben-Woolley/java-for-beginners.git`
 
----
+### Importing the project to IntelliJ
 
-## Importing the project to IntelliJ
+If you **did not** create a new project from version control. You will need to import the project like so:
 
 1. Open up IntelliJ and click Import Project
 ![openintellij](assets/pokemonsetup/openintellij.png)
@@ -31,13 +34,13 @@
 5. Press next again
 ![importproject4](assets/pokemonsetup/importproject4.png)
 
-6. Press next again
+6. Make sure you have a project SDK selected, this is what will run your Java application. Click the + button and point at the `bin` directory inside where you installed your Java 8 JDK.
 ![importproject5](assets/pokemonsetup/importproject5.png)
 
 7. Press next one last time!
 ![importproject6](assets/pokemonsetup/importproject6.png)
 
-8. Now the project is ready to go! You can open up the folders and start coding away :)
+8. Now the project is ready to go! You can open up the folders and start coding away.
 ![project](assets/pokemonsetup/project.png)
 
 ---
