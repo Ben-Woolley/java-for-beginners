@@ -53,7 +53,7 @@ class SillyEquation {
       int a = 2;
       int b = 4;
       int x = 5;
-      System.out.println("Is x the sum of a and b? " + x == sum(a, b));
+      System.out.println("Is x the sum of a and b? " + (x == sum(a, b)));
     }
 
     static int sum(int a, int b) {
