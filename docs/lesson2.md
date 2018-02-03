@@ -3,13 +3,13 @@
 ## Recap
 Remember our equation from the last lesson:
 ```java
-public class SillyEquation {
-    public static void main(String[] args) {
-        int that = 2;
-        int theOther = 4;
-        int result = that + theOther;
-        System.out.println("The result is " + result);
-    }
+public class AnExampleProgram {
+  public static void main(String[] args) {
+  	Integer that = 2;
+  	Integer theOther = 4;
+  	Integer result = that + theOther;
+  	System.out.println("The result is " + result);
+  }
 }
 ```
 To run this program we just right-click and run in the editor.  
@@ -31,6 +31,11 @@ While at a breakpoint you can see what all the variables available look like in 
 
 ![debugging example](assets/intellij/debugging.png)
 
+
+### Exercise
+Try out debugging and using each of the features.
+To try step in and step out, create your own method that you call from the `main` method. This can be as simple as `sum(Integer a, Integer b)` that adds `a` and `b` together.
+
 ---
 # More Java Concepts
 *And a few more operators. And a lot of naming conventions*
@@ -46,17 +51,18 @@ And many more, but what has been shown is enough to make Pokemon Code Academy.
 
 *Bonus homework: Have a look at the other available operators*
 
-## Let's enhance SillyEquation
+## Let's enhance AnExampleProgram
 ```java
-class SillyEquation {
+class AnExampleProgram {
   public static void main(String[] args) {
-      int a = 2;
-      int b = 4;
-      int x = 5;
+      Integer a = 2;
+      Integer b = 4;
+      Integer x = 5;
       System.out.println("Is x the sum of a and b? " + (x == sum(a, b)));
     }
 
-    static int sum(int a, int b) {
+    // This is a method/function, it is a way to make code reusable.
+    static Integer sum(Integer a, Integer b) {
       return a + b;
     }
 }
@@ -80,31 +86,31 @@ Constant names may also contain digits if appropriate, but not as the first char
 There are some words that you cannot use as object or variable names in a Java program. These words are known as "reserved" words; they are keywords that are already used by the syntax of the Java programming language.
 
 ```java
-int int = 1; 	     //ILLEGAL		
-int intValue = 1; 	//LEGAL
+Integer int = 1; 	//ILLEGAL
+Integer integer = 1; 	//LEGAL
 ```
 
 # Time to Enhance Again
 ## But first, Constants
 When a variable can only have one value across its entire lifespan, it’s called a constant.
 
-Constants are defined with the prefix `final` e.g. `final int attackPower = 6;` inside methods.
+Constants are defined with the prefix `final` e.g. `final Integer attackPower = 6;` inside methods.
 
-And with the prefix `static final` e.g. 'static final int PI = 3.14;' for variables outside methods (known as members).
+And with the prefix `static final` e.g. 'static final Integer PI = 3.14;' for variables outside methods (known as members).
 
-## The new, new SillyEquation
+## The new, new AnExampleProgram
 ```
-class SillyEquation {
-  static final int MY_SUM = 5;
+class AnExampleProgram {
+  static final Integer MY_REQUIRED_FRUIT_INTAKE = 5;
   public static void main(String[] args) {
-    int numberOfApples = 2;
-    int numberOfBananas = 4;
+    Integer numberOfApples = 2;
+    Integer numberOfBananas = 4;
     String numberOfOranges = ”2”;
-    System.out.println(MY_SUM == sum(numberOfApples, numberOfBananas));
-    System.out.println(MY_SUM < sum(numberOfOranges, numberOfBananas));
+    System.out.println(MY_REQUIRED_FRUIT_INTAKE == sum(numberOfApples, numberOfBananas));
+    System.out.println(MY_REQUIRED_FRUIT_INTAKE < sum(numberOfOranges, numberOfBananas));
   }
 
-  static int sum(int firstNumber, int secondNumber) {
+  static Integer sum(Integer firstNumber, Integer secondNumber) {
       return firstNumber + secondNumber;
   }
 }
@@ -113,7 +119,7 @@ class SillyEquation {
 I turned off the syntax highlighting so you couldn't cheat.
 
 # Homework
-* Play with the debugger and your SillyEquation.
+* Play with the debugger and your AnExampleProgram.
 * Step through your program and see what is going on in your variables.
 
 You can add complexity to your equation by playing around with all the operators introduced so far.

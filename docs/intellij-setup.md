@@ -23,8 +23,7 @@ On MacOS, this box will appear:
 
     3. After this, double-click the IntelliJ IDEA CE icon (This can be found via Launchpad on Mac).
 
-    This dialog box may appear, continue by clicking "Open".
-    ![ide-install2](assets/intellij-setup/ide-install2.png)
+    A dialog box may appear, continue by clicking "Open".
 
 ### Windows Installation
     1. Navigate to where you saved the download, and run the ``.exe`` file.

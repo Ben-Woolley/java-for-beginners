@@ -16,11 +16,11 @@ class StarterPokemon
     ...
 
     /**
-     * Given a number x of int type, if x is greater or equal to 0 and smaller
+     * Given a number x of Integer type, if x is greater or equal to 0 and smaller
      * than the size of ownedPokemon, then return the Pokémon of index x on the list of owned
      * Pokémon. Otherwise, always return the first Pokémon in the list
      */
-    static Pokemon choosePokemon(int id) {
+    static Pokemon choosePokemon(Integer id) {
         // You do this bit
     }
 }
@@ -31,7 +31,7 @@ We want to randomly encounter one of our wild Pokémon.
 
 We can make use of the ``Math`` library to do this.
 
-``Math.random()`` returns a ``double`` (a floating point number that can go twice as large as a ``float``, which is already pretty [big](http://cs.fit.edu/~ryan/java/language/java-data.html)) between 0 and 1.
+``Math.random()`` returns a ``Double`` (a floating point number that can go twice as large as a ``Float``, which is already pretty [big](http://cs.fit.edu/~ryan/java/language/java-data.html)) between 0 and 1.
 
 We can check if the returned value is between different boundaries to choose the wild Pokémon to encounter. (You can even make some Pokémon rarer than others)
 

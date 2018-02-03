@@ -3,15 +3,14 @@
 ## Recap: Trainer Homework
 ### Before
 ```java
-class PokemonTrainer
-{
-  // name
-  // numberOfPokeBalls - start with 10
-  // list of ownedPokemon
+class PokemonTrainer {
+    // name
+    // numberOfPokeBalls - start with 10
+    // list of ownedPokemon
 
-  // constructor that takes the trainer’s name - trainerName
+    // constructor that takes the trainer’s name - trainerName
 
-  // getters for all attributes of the trainer
+    // getters for all attributes of the trainer
 }
 ```
 
@@ -22,33 +21,35 @@ class PokemonTrainer
 
 ## Now let's add some functionality
 First to our Pokemon trainer. We want them to be able to capture and choose between their Pokemon.
+**Exercise**: Implement `capture` and `choosePokemon`
+
 
 ```java
 class Trainer {
-  // attributes, constructor and get methods here
-  /**
-  * Given an object of type Pokemon, reduce the number of balls by 1 and add the
-  *  Pokemon to the list of ownedPokemon
-  */
-	void capture(Pokemon pokemon) {}
+    // attributes, constructor and get methods here
+    /**
+    * Given an object of type Pokemon, reduce the number of balls by 1 and add the
+    *  Pokemon to the list of ownedPokemon
+    */
+    void capture(Pokemon pokemon) {}
 
-	/**
-  * Given a number id of int type, if id is greater or equal to 0 and smaller
-  * than the size of ownedPokemon, then return the Pokemon of index id on the list of owned
-  * Pokemon. Otherwise, always return the first Pokemon in the list.
-  * @param id
-  * @return an instance of Pokemon
-  */
-	void choosePokemon(int id) {}
-	// TIP: the method size() can be used for ArrayList to get the total number of items in it
-	// TIP: For retrieving an Object from the List, use .get(index)
-	// TIP: ArrayList always starts with index 0
+    /**
+    * Given a number id of Integer type, if id is greater or equal to 0 and smaller
+    * than the size of ownedPokemon, then return the Pokemon of index id on the list of owned
+    * Pokemon. Otherwise, always return the first Pokemon in the list.
+    * @param id
+    * @return an instance of Pokemon
+    */
+    void choosePokemon(Integer id) {}
+    // TIP: the method size() can be used for ArrayList to get the total number of items in it
+    // TIP: For retrieving an Object from the List, use .get(index)
+    // TIP: ArrayList always starts with index 0
 
-	/**
-  * Given a starterPokemon of Pokemon type, add the starterPokemon to the list of ownedPokemon
-  * @param pokemon
-  */
-  void setStarterPokemon(Pokemon pokemon) {}
+    /**
+    * Given a starterPokemon of Pokemon type, add the starterPokemon to the list of ownedPokemon
+    * @param pokemon
+    */
+    void setStarterPokemon(Pokemon pokemon) {}
 }
 ```
 
@@ -59,41 +60,44 @@ class Trainer {
 
 ## Let's create our starter Pokemon collection
 This will be used at the start of our Pokemon adventure.
+**Exercise** Implement the `StarterPokemonCollection`
 
 ```java
 class StarterPokemonCollection {
-  // create three Pokemon: Charmander, Bulbasaur, and Squirtle.
-  // TIP: the attributes should be static
+    // create three Pokemon: Charmander, Bulbasaur, and Squirtle.
+    // TIP: the attributes should be static
 
-  // Create a list of Pokemon starterPokemon (use static)
+    // Create a list of Pokemon starterPokemon (use static)
 
-  static List<Pokemon> get() {
-		// add the three Pokemon to the list created above and return the list
-  }
+    static List<Pokemon> get() {
+        // add the three Pokemon to the list created above and return the list
+    }
 
-	 /**
-   * Given a number id of int type, if id is greater or equal to 0 and smaller
-   * than the size of ownedPokemon, then return the Pokemon of index id on the list of owned
-   * Pokemon. Otherwise, always return the first Pokemon in the list.
-   * @param id
-   * @return an instance of Pokemon
-   */
-	static Pokemon choosePokemon(int id) {}
+    /**
+    * Given a number id of Integer type, if id is greater or equal to 0 and smaller
+    * than the size of ownedPokemon, then return the Pokemon of index id on the list of owned
+    * Pokemon. Otherwise, always return the first Pokemon in the list.
+    * @param id
+    * @return an instance of Pokemon
+    */
+    static Pokemon choosePokemon(Integer id) {}
 }
 ```
 
 ## And our Wild Pokemon
+**Exercise** Implement **WildPokemon**
+
 ```java
 class WildPokemon {
 
- 	// create five constants for the names of the five wild    
- 	// Pokemon: pidgey, caterpie, magikarp, ditto, and snorlax
- 	// They will be used when creating the wild Pokemon objects
+    // create five constants for the names of the five wild
+    // Pokemon: pidgey, caterpie, magikarp, ditto, and snorlax
+    // They will be used when creating the wild Pokemon objects
 
- 	// Create five Pokemon objects : pidgey, caterpie, magikarp, ditto, and snorlax
- 	// tip: the attributes should be static
+    // Create five Pokemon objects : pidgey, caterpie, magikarp, ditto, and snorlax
+    // tip: the attributes should be static
 
-  // We aren't creating the method to choose between them yet
+    // We aren't creating the method to choose between them yet
 }
 ```
 
