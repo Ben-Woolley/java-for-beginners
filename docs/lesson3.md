@@ -32,16 +32,17 @@ if false then the answer is true
 | ---    | ---   |
 | false  | true  |
 
-## The new, new, new SillyEquation
+## The new, new, new AnExampleProgram
 ```java
-class SillyEquation {
+class AnExampleProgram {
 
   public static void main(String[] args) {
-    int numberOfApples = 2;
-    int numberOfBananas = 4;
-    int numberOfOranges = 2;
-    System.out.println((numberOfApples == numberOfBananas) &&
-    (numberOfApples == numberOfOranges)); //CONDITIONS
+    Integer numberOfApples = 2;
+    Integer numberOfBananas = 4;
+    Integer numberOfOranges = 2;
+
+    System.out.println("Do I have a balanced fruit diet? "
+        + ((numberOfApples == numberOfBananas) && (numberOfApples == numberOfOranges)));
   }
 }
 ```
@@ -53,20 +54,23 @@ We can use conditional values to construct:
 
 ## A simple `if` statement
 ```java
-if (healthPoints >= combatPower) {
-  healthPoints = healthPoints - combatPower;
-} else {
-  healthPoints = 0;
+public static Integer reduceHealth(Integer healthPoints, Integer combatPower) {
+    if (healthPoints >= combatPower) {
+      healthPoints = healthPoints - combatPower;
+    } else {
+      healthPoints = 0;
+    }
+    return healthPoints;
 }
 ```
-This example prevents the healthPoints variable from going below 0.
+This example prevents the `healthPoints` returned from going below 0.
 
 It can be used in our upcoming Pokémon game:
 ```java
 public class Pokemon {
   String name = "Pikachu";
-  int healthPoints = 20;
-  int combatPower = 8;
+  Integer healthPoints = 20;
+  Integer combatPower = 8;
 
   /* Given a certain amount of points passed in as argument, 
   if my existing health points are greater than the given points
@@ -74,8 +78,10 @@ public class Pokemon {
   If my existing health points are less than the given points,   
   I want to set my health points to 0.
   */
-  public void reduceHealth(int points) {
-    //TODO
+  public void reduceHealth(Integer points) {
+
+    // TODO your implementation here
+
   }
 }
 ```
@@ -87,19 +93,14 @@ There are many types of collections (e.g. `list`, `set`, `map`) - we will focus 
 A list holds objects in the order you pass them to it.
 
 ```java
+Pokemon squirtle = new Pokemon("Squirtle");
+Pokemon bulbasaur = new Pokemon("Bulbasaur");
+Pokemon charmander = new Pokemon("Charmander");
+
 List<Pokemon> starterPokemon = new ArrayList<Pokemon>();
-
-Pokemon squirtle = new Pokemon();
-squirtle.name = "Squirtle";
 starterPokemon.add(squirtle);
-
-Pokemon bulbasaur = new Pokemon();
-bulbasaur.name = "Bulbasaur";
-starterPokemon.add(bulbsaur);
-
-Pokemon charmander = new Pokemon();
-charmander.name = "Charmander";
 starterPokemon.add(charmander);
+starterPokemon.add(bulbsaur);
 ```
 The example `starterPokemon` list would contain `squirtle`, `bulbasaur`, and `charmander` in that order.
 
@@ -112,29 +113,31 @@ for (Pokemon pokemon: starterPokemon) {
 }
 ```
 
+In the context of the `for` loop, the variable `pokemon` will be the current `Pokemon` for the loop. This effectively states "For each `Pokemon` in the `starterPokemon` list, do the contents of the loop using them".
+
 ### A more dangerous `for`
 You don't need to use this one but it's good extra stuff to know.
 A `for` loop may also use conditional statements to do things a number of times instead:
 ```java
-for (int i = 0; i < 10; i++) {
+for (Integer i = 0; i < 10; i++) {
   System.out.println("And again");
 }
 ```
 The `for` statement is made of 3 expressions:
-* The first `int i = 0;` sets up a variable to change on each iteration. This variable only exists in this loop.
+* The first `Integer i = 0;` sets up a variable to change on each iteration. This variable only exists in this loop.
 * The second `i < 10;` is the condition on which the loop ends. In our case it is when `i` is no longer less than 10.
-* The final statement `i++` is performed after every run of the loop, it's intended to eventually make the second expression `false`.
+* The final statement `i++` (`i = i + 1`) is performed after every run of the loop, it's intended to eventually make the second expression `false`.
 
 # Homework
-Experiment with IF ELSE
+Experiment with `if`/`else`
 
-Declare an `int` variable called `choice`.
+Create a `void` method `printMoveDirection` that takes an `Integer choice`
 * If the value is 1 print “Going Left”.
 * If the value is 2 print “Going straight”.
 * If it’s 3 print “Going right”.
+* For any other values print “Invalid input!”.
 
-For any other values print “Invalid input!”.  
-Experiment with this code in the `main` method and see how different values of choice affect the output of your program.
+Test your code by calling the method in a `main` method and see how different values of choice affect the output of your program.
 
 ---
 Next Lesson: [Objects and Classes](lesson4.md)  

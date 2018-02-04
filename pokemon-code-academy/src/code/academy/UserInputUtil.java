@@ -2,15 +2,29 @@ package code.academy;
 
 import java.util.Scanner;
 
+/**
+ * Read user input from the terminal (System.in, much like we used System.out to print to the terminal)
+ */
 class UserInputUtil
 {
-    private static Scanner reader = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);
 
-    static String readString() {
-        return reader.nextLine();
+    /**
+     * Read the next line of user input and return it's String representation.
+     */
+    public static String readString() {
+        return SCANNER.nextLine();
     }
 
-    static Integer readInt() {
-        return reader.nextInt();
+    /**
+     * Read the next line of user input and return it's Integer representation.
+     *
+     * From @link{java.util.Scanner}:
+     * @throws java.util.InputMismatchException
+     *         if the next token does not match the <i>Integer</i>
+     *         regular expression, or is out of range
+     */
+    public static Integer readInteger() {
+        return SCANNER.nextInt();
     }
 }

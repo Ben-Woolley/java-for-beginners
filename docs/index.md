@@ -2,10 +2,17 @@
 
 ## Table of Contents
 ### Setup
-* [Setting up the Java SDK](java-setup.md)
-* [Setting up IntelliJ IDEA](intellij-setup.md)
-* [Setting up the Pokémon template project](PokemonSetUp.md)
- 
+We're going to do this together in lesson 1 to make sure we're all ready to go.  
+For this course we are going to install:
+
+* [Git](https://git-scm.com/downloads)
+* [The Java 8 JDK (Java Development Kit)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/#section=mac)
+([Setup Guide](intellij-setup.md))
+
+We're then going to use git to **clone** (take a copy of) the course project which we can add to [from here](https://github.com/Ben-Woolley/java-for-beginners).  
+After we have our local copy all that's left to do is import it into IntelliJ ([Setup Guide](PokemonSetUp.md)).
+
 ### Lessons
 * [Lesson 1 - Introduction and basic java concepts](lesson1.md)
 * [Lesson 2 - Debugging and additional concepts](lesson2.md)

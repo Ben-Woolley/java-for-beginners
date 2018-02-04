@@ -43,11 +43,11 @@ Each variable can store a particular type of data, chosen by you.
 ## Numbers
 Come in many flavours, based on how large or small you need them to go, and if you need decimal points.
 
-We are going to use `Integer` or `int` – whole numbers
+We are going to use `Integer` – whole numbers
 
 ```java
-int temperatureToday = 18;
-int myBankBalance = -65;
+Integer pokemonSeen = 18;
+Integer pokemonCaught = -65;
 ```
 
 ## Strings
@@ -55,7 +55,8 @@ A String is a sequence of (0 or more) characters.
 e.g. ``['H', 'e', 'l', 'l', 'o', ' ', 't', 'h', 'e', 'r', 'e', '.']``
 
 ```java
-String name = "Pikachu";
+String pokemonName = "Pikachu";
+System.out.println("A wild Pokemon appeared!");
 System.out.println("1. Attack 2. Run away");
 ```
 
@@ -65,32 +66,39 @@ System.out.println("1. Attack 2. Run away");
 Strings can be concatenated using the + operator e.g.
 
 ```java
-String prefix = "You threw a ball at it, the ";
-String suffix = " is captured!";
-String wildPokemon = "Ghastly(HP: 20) (CP: 8)";
-System.out.println(prefix + wildPokemon + suffix);
+String pokemonName = "Pikachu";
+System.out.println("A wild " + pokemonName + " appeared!");
+System.out.println("You threw a ball at it, the " + wildPokemon + " is captured!");
 ```
 
-You can also use different data types in concatenation.
+You can also use different data types in concatenation, Java automatically converts non-Strings.
+(This is done by calling their `toString()` method, that all Java Types implement by default)
 
 ```java
-String message = "You have " + trainer.getNumberOfPokeballs() + " balls left.";
+Integer pokeBallsLeft = 2;
+String message = "You have " + pokeBallsLeft + " Pokeballs left.";
 ```
 
 ## Booleans
-A boolean can be either true or false, use this for simple flags such as:
+A Boolean can be either true or false, use this for simple flags such as:
 
 ```java
-boolean havePokeballs = true;
-boolean canCatch = false;
+Boolean havePokeballs = true;
+Boolean canCatchWildPokemon = false;
 ```
 
 ## Arithmetic Operators
 We can perform basic arithmetic operations on variables:
-* + add
-* - subtract
+* `+` add
+* `-` subtract
 
-e.g. `int num = a + (b – c);`
+e.g.
+```java
+Integer a = 1;
+Integer b = 2;
+Integer c = 3;
+Integer result = a + (b – c);
+````
 
 ## Code Formatting
 * `{Braces}` group statements e.g. if, for and declarations e.g. class and methods
@@ -99,15 +107,15 @@ e.g. `int num = a + (b – c);`
 
 * `(Parentheses)` control the order of operation as in maths, and are used to give things as parameters to methods/functions
 
-*I will likely use the wrong words for these e.g. `(bracket)`, `[square bracket]`, `{moustache bracket}`*
+*I will likely use the wrong words for these e.g. `(bracket)`, `[square bracket]`, `{moustache bracket}`*
 
 ## Some code to start
 ```java
-public class SillyEquation {
+public class AnExampleProgram {
   public static void main(String[] args) {
-  	int that = 2;
-  	int theOther = 4;
-  	int result = that + theOther;
+  	Integer that = 2;
+  	Integer theOther = 4;
+  	Integer result = that + theOther;
   	System.out.println("The result is " + result);
   }
 }
@@ -117,7 +125,7 @@ public class SillyEquation {
 Right-click and run, the editor makes this really easy!
 
 ## Homework - Experiment with Operators
-* Switch, change, or use new operators in SillyEquation and see what happens.
+* Switch, change, or use new operators in AnExampleProgram and see what happens.
 * Discover more arithmetic operators and try them out too.
 * Have a look at what other operators are available.  
 (Don’t worry too much about the terrifying sound ones, we barely use them ourselves.)

@@ -19,15 +19,15 @@ public class Pokemon {
         combatPower = pokemonCombatPower;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    Integer getHealthPoints() {
+    public Integer getHealthPoints() {
         return healthPoints;
     }
 
-    Integer getCombatPower() {
+    public Integer getCombatPower() {
         return combatPower;
     }
 

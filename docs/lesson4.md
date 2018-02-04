@@ -4,13 +4,31 @@
 A while loop keeps going as long as the provided conditional statement is still true.
 
 ```java
-while (pokemon.healthPoints > 10) {
+Integer healthPoints = 20;
+while (healthPoints > 10) {
   System.out.println("1. Attack 2. Run away");
-
-  /* TODO Reduce healthPoints to get to an exit point
-  or the loop will continue infinitely! */
-  pokemon.healthPoints = pokemon.healthPoints - 1;
+  healthPoints = healthPoints - 1;
 }
+```
+
+They are however prone to causing infinite loops, as there is nothing stopping you from forgetting to reduce or increment a value to make the condition true.
+e.g.
+```java
+while (true) {
+    System.out.println("Help me I'm stuck!");
+}
+```
+Is completely valid.
+
+*Exercise*
+Make use of each loop type to do something with:
+```java
+List<Integer> numbers = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+```
+You will need to `import` 2 things for this line of code:
+```java
+import java.util.Arrays;
+import java.util.List;
 ```
 
 ## Classes
@@ -20,17 +38,19 @@ It is a blueprint you can use to create objects of that type with unique values.
 
 For example, a Pokémon could be represented as:
 ```java
-class Pokemon {
+
+public class Pokemon {
 
   String name;
-  int healthPoints;
-  int combatPower;
+  Integer healthPoints;
+  Integer combatPower;
 
-  Pokemon(String pokemonName, int pokemonHealthPoints, int pokemonCombatPower) {
+  Pokemon(String pokemonName, Integer pokemonHealthPoints, Integer pokemonCombatPower) {
     name = pokemonName;
     healthPoints = pokemonHealthPoints;
     combatPower = pokemonCombatPower;
   }
+
 }
 ```
 
@@ -56,9 +76,9 @@ Methods are given a name used to call them (in this case `getName`).
 Preferably you should use meaningful names for your methods so that you can understand the method will do from its name.
 
 ## Time for an Exercise
-Let’s add methods to the `Pokemon` class, to be able to get and set `healthPoints` and `combatPower`.
+Let’s add methods to the `Pokemon` class, to be able to get `healthPoints`, `combatPower` and `name`. We can also add our `reduceHealthPoints` method now.
 
-Use the constructor to create new `Pokemon` objects in the `main` method.
+Use the constructor to create new `Pokemon` objects in the `main` method and test your methods.
 
 ### Let's Create `toString()` Too
 ```java
@@ -75,7 +95,7 @@ public String toString() {
 ```
 
 # Homework
-Implement the `PokemonTrainer` Class
+Implement the `PokemonTrainer` Class, the class should already exist in your project to add to.
 ```java
 class PokemonTrainer
 {
