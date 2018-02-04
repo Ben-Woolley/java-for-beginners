@@ -1,5 +1,7 @@
 package code.academy;
 
+import java.util.Objects;
+
 public class Pokemon {
 
     private String name = "Missingno";
@@ -48,21 +50,24 @@ public class Pokemon {
         }
     }
 
-    public static void main(String[] args) {
-        Pokemon pikachu = new Pokemon("Pikachu", 20, 8);
-        pikachu.healthPoints = 13;
-        pikachu.reduceHealth(13);
-        System.out.println("Remaining healthPoints: " + pikachu.healthPoints);
-    }
-
     /**
      * Prints out information about the Pokemon in a nice way
-     *
-     * @return
      */
     public String toString()
     {
         return "Pokemon{" + "name='" + name + '\'' + ", healthPoints=" + healthPoints + ", combatPower=" + combatPower + '}';
     }
 
+    public boolean equals(Object other) {
+        if (other.getClass() != Pokemon.class) return false;
+        Pokemon otherPkmn = (Pokemon) other;
+        return Objects.equals(this.name, otherPkmn.name);
+    }
+
+    public static void main(String[] args) {
+        Pokemon pikachu = new Pokemon("Pikachu", 20, 8);
+        pikachu.healthPoints = 13;
+        pikachu.reduceHealth(13);
+        System.out.println("Remaining healthPoints: " + pikachu.healthPoints);
+    }
 }

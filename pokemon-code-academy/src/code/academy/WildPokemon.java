@@ -3,49 +3,40 @@ package code.academy;
 class WildPokemon
 {
 
-    static final String PIDGEY = "Pidgey";
-    static final String CATERPIE = "Caterpie";
-    static final String MAGIKARP = "Magikarp";
-    static final String DITTO = "Ditto";
-    static final String SNORLAX = "Snorlax";
+    private static final String PIDGEY = "Pidgey";
+    private static final String CATERPIE = "Caterpie";
+    private static final String MAGIKARP = "Magikarp";
+    private static final String DITTO = "Ditto";
+    private static final String SNORLAX = "Snorlax";
 
-    static Pokemon pidgey = new Pokemon(PIDGEY, 30, 12);
-    static Pokemon caterpie = new Pokemon(CATERPIE, 50, 30);
-    static Pokemon magikarp = new Pokemon(MAGIKARP, 27, 8);
-    static Pokemon ditto = new Pokemon(DITTO, 25, 10);
-    static Pokemon snorlax = new Pokemon(SNORLAX, 15, 5);
+    public static Pokemon PIDGEY_PKMN = new Pokemon(PIDGEY, 30, 12);
+    public static Pokemon CATERPIE_PKMN = new Pokemon(CATERPIE, 50, 30);
+    public static Pokemon MAGIKARP_PKMN = new Pokemon(MAGIKARP, 27, 8);
+    public static Pokemon DITTO_PKMN = new Pokemon(DITTO, 25, 10);
+    public static Pokemon SNORLAX_PKMN = new Pokemon(SNORLAX, 15, 5);
 
     /**
      * Given a random number
      *
-     * @return a wild pokemon among those available
+     * @return a wild pokemon among those available (not already captured)
      */
-    static Pokemon encounter() {
+    public static Pokemon encounter() {
 
         boolean foundAnAvailablePokemon = false;
-        Pokemon chosenPokemon = pidgey; // just a default
+        Pokemon chosenPokemon = PIDGEY_PKMN; // just a default
         while(!foundAnAvailablePokemon)
         {
-            double randomNumber = Math.random();
-            if (0 <= randomNumber && randomNumber < 0.1)
-            {
-                chosenPokemon = pidgey;
-            }
-            else if (0.1 <= randomNumber && randomNumber < 0.25)
-            {
-                chosenPokemon = caterpie;
-            }
-            else if (0.25 <= randomNumber && randomNumber < 0.45)
-            {
-                chosenPokemon = magikarp;
-            }
-            else if (0.45 <= randomNumber && randomNumber < 0.75)
-            {
-                chosenPokemon = ditto;
-            }
-            else
-            {
-                chosenPokemon = snorlax;
+            double randomNumber = RandomUtil.randomDouble();
+            if (0 <= randomNumber && randomNumber < 0.1) {
+                chosenPokemon = PIDGEY_PKMN;
+            } else if (0.1 <= randomNumber && randomNumber < 0.25) {
+                chosenPokemon = CATERPIE_PKMN;
+            } else if (0.25 <= randomNumber && randomNumber < 0.45) {
+                chosenPokemon = MAGIKARP_PKMN;
+            } else if (0.45 <= randomNumber && randomNumber < 0.75) {
+                chosenPokemon = DITTO_PKMN;
+            } else {
+                chosenPokemon = SNORLAX_PKMN;
             }
             if (!chosenPokemon.isCaptured()) {
                 foundAnAvailablePokemon = true;

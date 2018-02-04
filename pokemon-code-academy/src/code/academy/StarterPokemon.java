@@ -1,38 +1,32 @@
 package code.academy;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 class StarterPokemon
 {
 
-    static Pokemon bulbasaur = new Pokemon("Bulbasaur", 20, 8);
-    static Pokemon charmander = new Pokemon("Charmander", 25, 5);
-    static Pokemon squirtle = new Pokemon("Squirtle", 23, 7);
+    private static Pokemon BULBASAUR = new Pokemon("Bulbasaur", 20, 8);
+    private static Pokemon CHARMANDER = new Pokemon("Charmander", 25, 5);
+    private static Pokemon SQUIRTLE = new Pokemon("Squirtle", 23, 7);
 
-    static List<Pokemon> starterPokemonCollection;
-
-    static List<Pokemon> get() {
-        starterPokemonCollection = new ArrayList<>();
-        starterPokemonCollection.add(bulbasaur);
-        starterPokemonCollection.add(charmander);
-        starterPokemonCollection.add(squirtle);
-        return starterPokemonCollection;
-    }
+    public static final List<Pokemon> STARTER_POKEMON = Arrays.asList(
+            BULBASAUR,
+            CHARMANDER,
+            SQUIRTLE
+    );
 
     /**
      * Given a number x of int type, if x is greater or equal to 0 and smaller
      * than the size of ownedPokemon, then return the Pokémon of index x on the list of owned
      * Pokémon. Otherwise, always return the first Pokémon in the list
-     * @param id
-     * @return
      */
     static Pokemon choosePokemon(Integer id) {
-        if (id >= 0 && id < starterPokemonCollection.size()) {
-            return starterPokemonCollection.get(id);
+        if (id >= 0 && id < STARTER_POKEMON.size()) {
+            return STARTER_POKEMON.get(id);
         } else {
             System.out.println("Invalid ID. The first Pokémon will be chosen!");
-            return starterPokemonCollection.get(0);
+            return STARTER_POKEMON.get(0);
         }
     }
 }

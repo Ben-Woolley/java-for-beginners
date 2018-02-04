@@ -4,35 +4,34 @@ import java.util.List;
 
 public class Main {
 
+    private static final List<Pokemon> STARTER_POKEMON = StarterPokemon.STARTER_POKEMON;
+
     public static void main(String[] args) {
+        System.out.println("Hello, and welcome to the world of Pokemon!");
+        System.out.println("My name is Professor Oak. What was your name again?");
 
-        System.out.println("What is your name, Pokémon trainer?");
+        PokemonTrainer trainer = new PokemonTrainer(UserInputUtil.readString());
 
-        PokemonTrainer currentUser = new PokemonTrainer(UserInputUtil.readString());
+        System.out.println("Ah yes, now I remember, " + trainer.getName() + "!");
+        System.out.println("I'll give you one Pokemon to start your adventure, which do you want?\n");
 
-        System.out.println("Hello, " + currentUser.getName() +
-                ". Please select a Pokémon from the list below as your starter Pokemon:");
-
-        final List<Pokemon> startPokemons = StarterPokemon.get();
-
-        for (Pokemon pokemon : startPokemons) {
-            System.out.println(startPokemons.indexOf(pokemon) + ". " + pokemon);
+        for (Pokemon pokemon : STARTER_POKEMON) {
+            System.out.println(STARTER_POKEMON.indexOf(pokemon) + ". " + pokemon);
         }
 
-        Pokemon starterPokemon = StarterPokemon.choosePokemon(UserInputUtil.readInt());
+        trainer.setStarterPokemon(StarterPokemon.choosePokemon(UserInputUtil.readInteger()));
 
-        currentUser.setStarterPokemon(starterPokemon);
+        System.out.println(trainer.getOwnedPokemon().get(0).getName() + ", an excellent choice!");
+        listOwnedPokemon(trainer);
 
-        listOwnedPokemon(currentUser);
+        System.out.println("You are about to start your Pokemon adventure!");
 
-        System.out.println("You are about to go on the Pokémon hunting trip.");
-
-        while(currentUser.getNumberOfPokeballs() > 0 && !currentUser.hasCaughtThemAll()) {
-            move(currentUser);
+        while(trainer.getNumberOfPokeballs() > 0 && !trainer.hasCaughtThemAll()) {
+            move(trainer);
         }
 
-        if (currentUser.getNumberOfPokeballs() == 0) {
-            System.out.println("You've run out of Pokéballs. Exiting the game... See ya!");
+        if (trainer.getNumberOfPokeballs() == 0) {
+            System.out.println("You've run out of Pokéballs. I hope you enjoyed!");
         }
     }
 
@@ -47,7 +46,7 @@ public class Main {
 
         listDirection();
 
-        int choice = UserInputUtil.readInt();
+        int choice = UserInputUtil.readInteger();
 
         if (choice == 1) {
             System.out.println("Going left...");
@@ -59,9 +58,8 @@ public class Main {
             System.out.println("Invalid input");
         }
 
-        if (Math.random() <= 0.5) {
+        if (RandomUtil.randomDouble() <= 0.5) {
             System.out.println("Nothing here.");
-            move(currentUser);
         } else {
             wildEncounter(currentUser);
         }
@@ -77,7 +75,7 @@ public class Main {
         Pokemon wildPokemon = WildPokemon.encounter();
         System.out.println("A wild " + wildPokemon + " has appeared:");
         System.out.println("1. Fight 2. Run away");
-        if (UserInputUtil.readInt() == 1) {
+        if (UserInputUtil.readInteger() == 1) {
             fight(currentUser, wildPokemon);
         }
     }
@@ -103,13 +101,13 @@ public class Main {
         for (Pokemon pokemon : ownedPokemon) {
             System.out.println(ownedPokemon.indexOf(pokemon) +".  " + pokemon);
         }
-        Pokemon chosenPokemon = currentUser.choosePokemon(UserInputUtil.readInt());
+        Pokemon chosenPokemon = currentUser.choosePokemon(UserInputUtil.readInteger());
         System.out.println(chosenPokemon + " vs. " + wildPokemon);
 
         boolean runAway = false;
         while(wildPokemon.getHealthPoints() > 10) {
             System.out.println("1. Attack 2. Run away");
-            if (UserInputUtil.readInt() == 1) {
+            if (UserInputUtil.readInteger() == 1) {
                 wildPokemon.reduceHealth(chosenPokemon.getCombatPower());
                 System.out.println(chosenPokemon + " vs. " + wildPokemon);
             } else {
@@ -119,7 +117,7 @@ public class Main {
         }
         if (!runAway) {
             System.out.println("1. Capture 2. Run away");
-            if (UserInputUtil.readInt() == 1)
+            if (UserInputUtil.readInteger() == 1)
             {
                 currentUser.capture(wildPokemon);
                 System.out.println("You threw a ball at it, the " + wildPokemon + " is captured!");
@@ -135,7 +133,7 @@ public class Main {
      */
     static void listOwnedPokemon(PokemonTrainer currentUser) {
         System.out.println("Congratulations, now you have:");
-        for (Pokemon pokemon : currentUser.ownedPokemon) {
+        for (Pokemon pokemon : currentUser.getOwnedPokemon()) {
             System.out.println(pokemon);
         }
     }
