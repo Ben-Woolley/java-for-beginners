@@ -6,38 +6,36 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        //TODO WEEK 6
+        //TODO Week 6
         /* ------- Step 1: take name input and create a PokemonTrainer with the name ------ */
 
-        // print greeting message
+        // print introduction to the game
 
-        // create PokemonTrainer object
+        // ask for and take the user's name
 
-        //TODO WEEK 6
-        /* ------- Step 2: choose a pokemon as your starter pokemon ------ */
+        // create a PokemonTrainer using the inputted name
 
-        // print message
+        /* ------- Step 2: choose your starter Pokemon ------ */
 
-        // provide starter pokemon collection
+        // print message asking the player to choose their Pokemon
 
-        // print pokemon from the starter pokemon collection
+        // print out the player's choices
 
-        // choose a pokemon as your starter pokemon
+        // have the user select their Pokemon, and add the selected Pokemon to the PokemonTrainer object you created
 
-        // print out all your owned pokemon
-        List<Integer> numbers = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+        // print a message confirming the player's choice
 
-        //TODO
-        /* ------- Step 3: going on adventures ------ */
+        //TODO Week 7+
+        /* ------- Step 3: beginning the core of the game ------ */
 
-        // print message
+        // now the trainer is set up, we can begin the adventure
 
-        // Introduce goal here
+        // Introduce the goal of the game - to catch all Pokemon
 
-        // Continue exploring while the trainer has not caught
-        //   them all, or can still catch pokemon
+        // Start the main game loop - move()ing until you wildPokemonEncounter() a wild Pokemon
+        // End the loop when you catch them all or run out of Pokeballs
 
-        // Congratulate / console player if they win or lose
+        // End the game with some congratulatory or otherwise message
 
     }
 
@@ -47,7 +45,6 @@ public class Main {
      *   1. choose a direction to go
      *   2. "move" there, randomly deciding if there is a
      *        wildPokemonEncounter(trainer)
-     * @param trainer
      */
     static void move(PokemonTrainer trainer) {
         //TODO complete and enhance method
@@ -57,15 +54,13 @@ public class Main {
 
         // Tell user which way they are going
 
-        //generate a random value decide to repeat this step (no Pokemon met)
-        //or call a method that makes the pokemonTrainer to meet a pokemon
+        //generate a random value decide if we have a wildPokemonEncounter()
     }
 
     /**
      * The trainer encounters a wild Pokemon randomly.
      * They must choose to run away, ending the encounter.
      *   Or fight(trainer, wildPokemon)
-     * @param trainer
      */
     static void wildPokemonEncounter(PokemonTrainer trainer) {
         // TODO Week 8
