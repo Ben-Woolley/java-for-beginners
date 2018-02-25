@@ -67,10 +67,11 @@ class StarterPokemonCollection {
     // create three Pokemon: Charmander, Bulbasaur, and Squirtle.
     // TIP: the attributes should be static
 
-    // Create a list of Pokemon starterPokemon (use static)
+    // Create a list of Pokemon starterPokemon (a static list)
+    // use a static block (I will explain) to fill the list with the pokemon.
 
     static List<Pokemon> get() {
-        // add the three Pokemon to the list created above and return the list
+        // return your created static list here
     }
 
     /**
