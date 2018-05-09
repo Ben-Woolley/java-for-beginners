@@ -1,11 +1,12 @@
-package lessons.lesson5;
+package lessons.lesson6;
 
 import code.academy.Pokemon;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PokemonTrainerLesson6 {
+public class PokemonTrainerLesson6
+{
     private String name;
     private Integer numberOfPokeballs = 10;
     private List<Pokemon> ownedPokemon = new ArrayList<>();

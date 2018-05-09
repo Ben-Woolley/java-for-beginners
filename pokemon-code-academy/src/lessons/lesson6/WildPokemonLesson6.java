@@ -1,8 +1,11 @@
-package lessons.lesson5;
+package lessons.lesson6;
 
 import code.academy.Pokemon;
+import code.academy.RandomUtil;
 
-public class WildPokemonLesson6 {
+class WildPokemonLesson6
+{
+
     static final String PIDGEY = "Pidgey";
     static final String CATERPIE = "Caterpie";
     static final String MAGIKARP = "Magikarp";
@@ -23,7 +26,21 @@ public class WildPokemonLesson6 {
      * @return a wild Pokémon among those available
      */
     static Pokemon encounter() {
-        //TODO WEEK 6
-        return null;
+        Double randomNum = RandomUtil.randomDouble();
+        Pokemon chosenPokemon = null;
+        /*
+        if (0 <= randomNum && randomNum < 0.1) {
+            chosenPokemon = PIDGEY_PKMN;
+        } else if (0.1 <= randomNum && randomNum < 0.25) {
+            chosenPokemon = CATERPIE_PKMN;
+        } else if (0.25 <= randomNum && randomNum < 0.45) {
+            chosenPokemon = MAGIKARP_PKMN;
+        } else if (0.45 <= randomNum && randomNum < 0.75) {
+            chosenPokemon = DITTO_PKMN;
+        } else {
+            chosenPokemon = SNORLAX_PKMN;
+        }
+        */
+        return chosenPokemon;
     }
 }

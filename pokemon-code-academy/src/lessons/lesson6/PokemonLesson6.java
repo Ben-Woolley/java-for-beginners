@@ -1,4 +1,4 @@
-package lessons.lesson5;
+package lessons.lesson6;
 
 public class PokemonLesson6 {
 
@@ -46,4 +46,5 @@ public class PokemonLesson6 {
         System.out.println("Remaining healthPoints: " + pikachu.healthPoints);
         System.out.println(pikachu.toString());
     }
+
 }

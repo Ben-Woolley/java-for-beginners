@@ -1,7 +1,6 @@
 package code.academy;
 
-class WildPokemon
-{
+class WildPokemon {
 
     static final String PIDGEY = "Pidgey";
     static final String CATERPIE = "Caterpie";

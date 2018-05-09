@@ -5,8 +5,8 @@ import java.util.Scanner;
 /**
  * Read user input from the terminal (System.in, much like we used System.out to print to the terminal)
  */
-class UserInputUtil
-{
+public class UserInputUtil {
+
     private static final Scanner SCANNER = new Scanner(System.in);
 
     /**

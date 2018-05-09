@@ -5,7 +5,7 @@ import code.academy.Pokemon;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StarterPokemonLesson6 {
+public class StarterPokemonLesson5 {
 
     /*
     private static Pokemon BULBASAUR = new Pokemon("Bulbasaur", 20, 5);

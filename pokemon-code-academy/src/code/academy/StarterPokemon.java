@@ -2,8 +2,7 @@ package code.academy;
 
 import java.util.List;
 
-class StarterPokemon
-{
+class StarterPokemon {
 
     //TODO WEEK 5
     // create three Pokémon: Bulbasaur, Charmander, and Squirtle
