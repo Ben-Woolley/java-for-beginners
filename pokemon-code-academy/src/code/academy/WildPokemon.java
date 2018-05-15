@@ -1,8 +1,10 @@
 package code.academy;
 
-import static code.academy.PokemonType.*;
+import java.util.List;
 
 public class WildPokemon {
+
+    public static final List<PokemonType> WILD_POKEMON = PokemonType.getWildPokemonTypes();
 
     /**
      * Given a random number
@@ -10,23 +12,9 @@ public class WildPokemon {
      * @return a wild pokemon among those available
      */
     public static Pokemon encounter() {
+        Integer randomNumber = RandomUtil.randomInteger(0, WILD_POKEMON.size() - 1);
 
-        PokemonType chosenPokemon; // just a default
-
-        Double randomNumber = RandomUtil.randomDouble();
-        if (0 <= randomNumber && randomNumber < 0.1) {
-            chosenPokemon = PIDGEY;
-        } else if (0.1 <= randomNumber && randomNumber < 0.25) {
-            chosenPokemon = CATERPIE;
-        } else if (0.25 <= randomNumber && randomNumber < 0.45) {
-            chosenPokemon = MAGIKARP;
-        } else if (0.45 <= randomNumber && randomNumber < 0.75) {
-            chosenPokemon = DITTO;
-        } else {
-            chosenPokemon = SNORLAX;
-        }
-
-        return createPokemon(chosenPokemon);
+        return createPokemon(WILD_POKEMON.get(randomNumber));
     }
 
     /**

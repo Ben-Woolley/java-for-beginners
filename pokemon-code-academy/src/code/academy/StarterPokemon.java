@@ -1,17 +1,10 @@
 package code.academy;
 
-import java.util.Arrays;
 import java.util.List;
-
-import static code.academy.PokemonType.*;
 
 public class StarterPokemon {
 
-    public static final List<PokemonType> STARTER_POKEMON = Arrays.asList(
-            BULBASAUR,
-            CHARMANDER,
-            SQUIRTLE
-    );
+    public static final List<PokemonType> STARTER_POKEMON = PokemonType.getStarterPokemonTypes();
 
     /**
      * Given a number x of Integer type, if x is greater or equal to 0 and smaller
