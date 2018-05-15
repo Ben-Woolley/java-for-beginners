@@ -3,8 +3,7 @@ package code.academy;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PokemonTrainer
-{
+public class PokemonTrainer {
     private String name;
     private Integer numberOfPokeballs = 1;
     private List<Pokemon> ownedPokemon = new ArrayList<>();
@@ -18,8 +17,7 @@ public class PokemonTrainer
         return name;
     }
 
-    public int getNumberOfPokeballs()
-    {
+    public Integer getNumberOfPokeballs() {
         return numberOfPokeballs;
     }
 
@@ -60,26 +58,6 @@ public class PokemonTrainer
      */
     public void setStarterPokemon(Pokemon pokemon) {
         ownedPokemon.add(pokemon);
-    }
-
-
-    /**
-     * Flag whether one WildPokemon of each kind has been captured.
-     *
-     * @return true or false
-     */
-    public Boolean hasCaughtThemAll() {
-
-        Boolean result = ownedPokemon.contains(WildPokemon.PIDGEY_PKMN) &&
-                ownedPokemon.contains(WildPokemon.PIDGEY_PKMN) &&
-                ownedPokemon.contains(WildPokemon.PIDGEY_PKMN) &&
-                ownedPokemon.contains(WildPokemon.PIDGEY_PKMN) &&
-                ownedPokemon.contains(WildPokemon.PIDGEY_PKMN);
-        if (result) {
-            System.out.println("Congratulations, you've caught 'em all!");
-        }
-
-        return result;
     }
 
 }

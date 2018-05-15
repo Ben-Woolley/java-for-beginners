@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Main {
 
-    private static final List<Pokemon> STARTER_POKEMON = StarterPokemon.STARTER_POKEMON;
+    private static final List<PokemonType> STARTER_POKEMON = StarterPokemon.STARTER_POKEMON;
 
     public static void main(String[] args) {
         System.out.println("Hello, and welcome to the world of Pokemon!");
@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Ah yes, now I remember, " + trainer.getName() + "!");
         System.out.println("I'll give you one Pokemon to start your adventure, which do you want?\n");
 
-        for (Pokemon pokemon : STARTER_POKEMON) {
+        for (PokemonType pokemon : STARTER_POKEMON) {
             System.out.println(STARTER_POKEMON.indexOf(pokemon) + ". " + pokemon);
         }
 
@@ -26,13 +26,16 @@ public class Main {
 
         System.out.println("You are about to start your Pokemon adventure!");
 
-        while(trainer.getNumberOfPokeballs() > 0 && !trainer.hasCaughtThemAll()) {
+        while(trainer.getNumberOfPokeballs() > 0) {
             move(trainer);
         }
 
-        if (trainer.getNumberOfPokeballs() == 0) {
-            System.out.println("You've run out of Pokéballs. I hope you enjoyed!");
-        }
+        System.out.println("You've run out of Pokéballs. Did you catch em all?!");
+        System.out.println("There are " + PokemonType.values().length + " and you own " + trainer.getOwnedPokemon().size() + "!");
+
+        System.out.println();
+        System.out.println("Your Pokemon:");
+        listOwnedPokemon(trainer);
     }
 
     /**
@@ -44,9 +47,10 @@ public class Main {
      */
     static void move(PokemonTrainer currentUser) {
 
-        listDirection();
+        System.out.println("Choose your direction:");
+        System.out.println("1. Left 2. Straight 3. Right");
 
-        int choice = UserInputUtil.readInteger();
+        Integer choice = UserInputUtil.readInteger();
 
         if (choice == 1) {
             System.out.println("Going left...");
@@ -132,20 +136,8 @@ public class Main {
      * List (print out) all the owned pokemon given a PokemonTrainer
      */
     static void listOwnedPokemon(PokemonTrainer currentUser) {
-        System.out.println("Congratulations, now you have:");
         for (Pokemon pokemon : currentUser.getOwnedPokemon()) {
             System.out.println(pokemon);
         }
-    }
-
-    /**
-     * Guidance for choosing the direction to do into from Integer
-     * e.g. "Choose where to go!"
-     *      "1. Left 2. Straight 3. Right"
-     */
-    // list(print) the direction: 1. Left, 2. Straight, 3. Right
-    static void listDirection() {
-        System.out.println("Choose your direction:");
-        System.out.println("1. Left 2. Straight 3. Right");
     }
 }
