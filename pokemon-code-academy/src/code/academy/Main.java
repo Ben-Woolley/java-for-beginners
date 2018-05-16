@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Main {
 
-    private static final List<PokemonType> STARTER_POKEMON = StarterPokemon.STARTER_POKEMON;
+    private static final List<PokemonType> STARTER_POKEMON = StarterPokemonHelper.STARTER_POKEMON;
 
     public static void main(String[] args) {
         System.out.println("Hello, and welcome to the world of Pokemon!");
@@ -19,7 +19,7 @@ public class Main {
             System.out.println(STARTER_POKEMON.indexOf(pokemon) + ". " + pokemon);
         }
 
-        trainer.setStarterPokemon(StarterPokemon.choosePokemon(UserInputUtil.readInteger()));
+        trainer.setStarterPokemon(StarterPokemonHelper.choosePokemon(UserInputUtil.readInteger()));
 
         System.out.println(trainer.getOwnedPokemon().get(0).getName() + ", an excellent choice!");
         listOwnedPokemon(trainer);
@@ -76,7 +76,7 @@ public class Main {
      *   Or fight(trainer, wildPokemon)
      */
     static void wildEncounter(PokemonTrainer currentUser) {
-        Pokemon wildPokemon = WildPokemon.encounter();
+        Pokemon wildPokemon = WildPokemonHelper.encounter();
         System.out.println("A wild " + wildPokemon + " has appeared:");
         System.out.println("1. Fight 2. Run away");
         if (UserInputUtil.readInteger() == 1) {

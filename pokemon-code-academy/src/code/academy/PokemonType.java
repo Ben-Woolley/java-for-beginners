@@ -7,11 +7,11 @@ public enum PokemonType {
     CHARMANDER("Charmander", 18, 5, true),
     SQUIRTLE("Squirtle", 22, 4, true),
     BULBASAUR("Bulbasaur", 15, 7, true),
-    PIDGEY("Pidgey", 30, 12),
-    CATERPIE("Caterpie", 50, 30),
-    MAGIKARP("Magikarp", 27, 8),
-    DITTO("Ditto", 25, 10),
-    SNORLAX("Snorlax", 15, 5);
+    PIDGEY("Pidgey", 30, 12, false),
+    CATERPIE("Caterpie", 50, 30, false),
+    MAGIKARP("Magikarp", 27, 8, false),
+    DITTO("Ditto", 25, 10, false),
+    SNORLAX("Snorlax", 15, 5, false);
 
     private String name;
     private Integer healthPoints;
@@ -25,6 +25,12 @@ public enum PokemonType {
         this.isStarterPokemon = isStarterPokemon;
     }
 
+    /**
+     * You can also have more than one constructor with different arguments.
+     * This one lets you create new PokemonTypes which are wild pokemon by default.
+     * e.g.
+     *  VOLLTORB("Voltorb", 15, 5)
+     */
     PokemonType(String name, Integer healthPoints, Integer combatPower) {
         this.name = name;
         this.healthPoints = healthPoints;

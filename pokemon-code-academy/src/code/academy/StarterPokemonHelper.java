@@ -2,7 +2,7 @@ package code.academy;
 
 import java.util.List;
 
-public class StarterPokemon {
+public class StarterPokemonHelper {
 
     public static final List<PokemonType> STARTER_POKEMON = PokemonType.getStarterPokemonTypes();
 

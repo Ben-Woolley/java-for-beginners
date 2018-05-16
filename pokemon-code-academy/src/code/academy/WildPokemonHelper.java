@@ -2,7 +2,7 @@ package code.academy;
 
 import java.util.List;
 
-public class WildPokemon {
+public class WildPokemonHelper {
 
     public static final List<PokemonType> WILD_POKEMON = PokemonType.getWildPokemonTypes();
 
