@@ -15,28 +15,7 @@ public class AnExampleProgram {
 To run this program we just right-click and run in the editor.  
 Today we're going to enhance this equation using what we're learning.
 
----
-## Debugging your Code
-Right-click and debug ![debug](assets/intellij/debug.png), this is a feature of the editor!
 
-Debugging lets us see what happens when we run our code.  
-We can see everything step-by-step by using several features:
-* ![breakpoint](assets/intellij/db_set_breakpoint.png) **Breakpoints** are what let you stop and see what's happening at a particular line in code.  
-These are set by clicking next to the line number in the editor that you want to stop at.
-* ![step over](assets/intellij/frames_step_over.png) **Step over** - run the highlighted line and wait at the next.
-* ![step in](assets/intellij/frames_step_into.png) **Step in** - Run the highlighted line of code, and if it calls a function go to it's first line.
-* ![step out](assets/intellij/frames_step_out.png) **Step out** - Finish running the current "block" of code (between two `{braces}`) and go to the line after the line that called it originally.
-
-While at a breakpoint you can see what all the variables available look like in the debug pane.
-
-![debugging example](assets/intellij/debugging.png)
-
-
-### Exercise
-Try out debugging and using each of the features.
-To try step in and step out, create your own method that you call from the `main` method. This can be as simple as `sum(Integer a, Integer b)` that adds `a` and `b` together.
-
----
 # More Java Concepts
 *And a few more operators. And a lot of naming conventions*
 
@@ -53,12 +32,12 @@ And many more, but what has been shown is enough to make Pokemon Code Academy.
 
 ## Let's enhance AnExampleProgram
 ```java
-class AnExampleProgram {
+public class AnExampleProgram {
   public static void main(String[] args) {
-      Integer a = 2;
-      Integer b = 4;
-      Integer x = 5;
-      System.out.println("Is x the sum of a and b? " + (x == sum(a, b)));
+      Integer that = 2;
+      Integer theOther = 4;
+      Integer expected = 5;
+      System.out.println("Is expected the sum of that and theOther? " + (expected == sum(that, theOther)));
     }
 
     // This is a method/function, it is a way to make code reusable.
@@ -99,13 +78,22 @@ Constants are defined with the prefix `final` e.g. `final Integer attackPower = 
 And with the prefix `static final` e.g. 'static final Integer PI = 3.14;' for variables outside methods (known as members).
 
 ## The new, new AnExampleProgram
+**Exercise**
+I need to know if I'm getting my recommended fruit intake:
+* My recommended fruit intake is a constant of 5
+* I have 2 Apples, 4 Bananas, and 2 Oranges
+* I want to know if eating my apples and my bananas is exactly my recommended intake
+* I want to know if eating my oranges and bananas is enough for my recommended intake
+
+Here's how I've done it:
 ```
-class AnExampleProgram {
-  static final Integer MY_REQUIRED_FRUIT_INTAKE = 5;
+public class AnExampleProgram {
+  private static final Integer MY_REQUIRED_FRUIT_INTAKE = 5;
   public static void main(String[] args) {
     Integer numberOfApples = 2;
     Integer numberOfBananas = 4;
     String numberOfOranges = ”2”;
+
     System.out.println(MY_REQUIRED_FRUIT_INTAKE == sum(numberOfApples, numberOfBananas));
     System.out.println(MY_REQUIRED_FRUIT_INTAKE < sum(numberOfOranges, numberOfBananas));
   }
@@ -119,13 +107,10 @@ class AnExampleProgram {
 I turned off the syntax highlighting so you couldn't cheat.
 
 # Homework
-* Play with the debugger and your AnExampleProgram.
-* Step through your program and see what is going on in your variables.
-
-You can add complexity to your equation by playing around with all the operators introduced so far.
-* And debug that too, why not?
-
-*Bonus: Have a look at the other operators available*
+* Add complexity to your example program by using more operators.
+* Come up with your own scenario you can turn into a program and implement it.
+* ***Bonus***: have a look at [using the debugger](debugging.md)
+* ***Bonus***: Have a look at the other operators available
 
 ---
 Next Lesson: [Logic and making decisions](lesson3.md)  

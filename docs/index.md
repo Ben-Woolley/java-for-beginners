@@ -23,6 +23,9 @@ After we have our local copy all that's left to do is import it into IntelliJ ([
 * [Lesson 7 - Pokémon Code Academy part 3](lesson7.md)
 * [Lesson 8 - Final Thoughts](lesson8.md)
 
+#### Extras
+* [Using the debugger](debugging.md)
+
 ## What is Java?
 Java is one of the most popular programming languages used today.  
 It is:

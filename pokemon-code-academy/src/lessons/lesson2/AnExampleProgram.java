@@ -1,6 +1,6 @@
 package lessons.lesson2;
 
-public class SillyEquation {
+public class AnExampleProgram {
     private static final int MY_SUM = 5;
 
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package lessons.lesson3;
 
-public class SillyEquation {
+public class AnExampleProgram {
     public static void main(String[] args) {
         Integer numberOfApples = 2;
         Integer numberOfBananas = 4;

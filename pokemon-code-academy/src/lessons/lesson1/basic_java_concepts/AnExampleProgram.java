@@ -1,6 +1,6 @@
 package lessons.lesson1.basic_java_concepts;
 
-public class SillyEquation {
+public class AnExampleProgram {
     public static void main(String[] args) {
         Integer that = 2;
         Integer theOther = 4;

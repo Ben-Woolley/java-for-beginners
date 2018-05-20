@@ -64,7 +64,7 @@ This results in a new instance of `Pokemon` stored in the variable `pikachu`.
 ## Methods
 A Method is a code block you can use elsewhere in your code without duplication. For example:
 ```java
-String getName() {
+public String getName() {
   return name;
 }
 ```

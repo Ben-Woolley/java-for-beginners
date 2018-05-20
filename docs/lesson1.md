@@ -32,15 +32,17 @@ The difference between `print` and `println` is that println adds an "enter" AKA
 
 ## Variables
 Variables act as labeled boxes to store things.  
-The value of the variables can be changed later in the program.  
+The value of the variables can be changed later in the program.
+
+They follow the format of `ObjectType nameOfObject = *some value*;`.
 
 Each variable can store a particular type of data, chosen by you.
  There are many different types. Today we will cover:
-* Numbers
-* Strings
-* Booleans (conditional values)
+* Numbers (e.g. `Integer`, `Long`, `Float`,`Double``)
+* Strings (`String`)
+* Booleans (`Boolean` - `true/false` values)
 
-## Numbers
+### Numbers
 Come in many flavours, based on how large or small you need them to go, and if you need decimal points.
 
 We are going to use `Integer` – whole numbers
@@ -50,7 +52,7 @@ Integer pokemonSeen = 18;
 Integer pokemonCaught = -65;
 ```
 
-## Strings
+### Strings
 A String is a sequence of (0 or more) characters.  
 e.g. ``['H', 'e', 'l', 'l', 'o', ' ', 't', 'h', 'e', 'r', 'e', '.']``
 
@@ -62,8 +64,8 @@ System.out.println("1. Attack 2. Run away");
 
 *(These are also known as String literals, where literal means it is a fixed value in the program)*
 
-## Concatenating Strings
-Strings can be concatenated using the + operator e.g.
+#### Concatenating Strings
+Strings can be concatenated/glued together using the `+` operator e.g.
 
 ```java
 String pokemonName = "Pikachu";
@@ -73,14 +75,15 @@ System.out.println("You threw a ball at it, the " + wildPokemon + " is captured!
 
 You can also use different data types in concatenation, Java automatically converts non-Strings.
 (This is done by calling their `toString()` method, that all Java Types implement by default)
+e.g.:
 
 ```java
 Integer pokeBallsLeft = 2;
 String message = "You have " + pokeBallsLeft + " Pokeballs left.";
 ```
 
-## Booleans
-A Boolean can be either true or false, use this for simple flags such as:
+### Booleans
+A Boolean can be either `true` or `false`, use this for simple flags such as:
 
 ```java
 Boolean havePokeballs = true;
@@ -91,13 +94,13 @@ Boolean canCatchWildPokemon = false;
 We can perform basic arithmetic operations on variables:
 * `+` add
 * `-` subtract
+* `*` multiply
+* `/` divide
+* and other less commonly used, including modulus `%` - the remainder of whole number division.
 
 e.g.
 ```java
-Integer a = 1;
-Integer b = 2;
-Integer c = 3;
-Integer result = a + (b – c);
+Integer aNumber = 1 + (2 – 3) * 4 / 5;
 ````
 
 ## Code Formatting
@@ -126,10 +129,9 @@ Right-click and run, the editor makes this really easy!
 
 ## Homework - Experiment with Operators
 * Switch, change, or use new operators in AnExampleProgram and see what happens.
-* Discover more arithmetic operators and try them out too.
-* Have a look at what other operators are available.  
+* Have a look at what operators are available in Java (https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html).
 (Don’t worry too much about the terrifying sound ones, we barely use them ourselves.)
-* *Bonus: Discover how division works with integers*
+* *Bonus: Discover how division works with integers by writing your own program*
 
 ---
 Next Lesson: [Debugging and additional concepts](lesson2.md)  

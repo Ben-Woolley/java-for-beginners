@@ -1,23 +1,27 @@
 # Lesson 4 Homework Solution
 ```java
-class Trainer {
+public class PokemonTrainer {
     private String name;
     private Integer numberOfPokeBalls = 10;
     private List<Pokemon> ownedPokemon = new ArrayList<Pokemon>();
 
-    Trainer(String trainerName) {
+    public PokemonTrainer(String name) {
+        this.name = name;
+    }
+
+    public Trainer(String trainerName) {
 	    name = trainerName;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    Integer getNumberOfPokeBalls() {
+    public Integer getNumberOfPokeBalls() {
         return numberOfPokeBalls;
     }
 
-    ArrayList<Pokemon> getOwnedPokemon() {
+    public List<Pokemon> getOwnedPokemon() {
         return ownedPokemon;
     }
 }
