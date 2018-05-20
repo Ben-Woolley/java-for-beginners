@@ -1,8 +1,5 @@
 package code.academy;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -91,13 +88,4 @@ public class Main {
         // TODO Week 6
     }
 
-    /**
-     * Guidance for choosing the direction to do into from Integer
-     * e.g. "Choose where to go!"
-     *      "1. Left 2. Straight 3. Right"
-     */
-    // list(print) the direction: 1. Left, 2. Straight, 3. Right
-    static void listDirection() {
-        //TODO WEEK 7
-    }
 }

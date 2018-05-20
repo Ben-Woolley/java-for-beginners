@@ -35,8 +35,6 @@ public class Pokemon {
 
     /**
      * Prints out information about the Pokemon in a nice way
-     *
-     * @return
      */
     public String toString() {
         //TODO WEEK 4
