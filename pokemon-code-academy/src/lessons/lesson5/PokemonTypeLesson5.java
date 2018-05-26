@@ -7,15 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public enum PokemonTypeLesson5 {
-//    CHARMANDER("Charmander", 18, 5, true),
-//    SQUIRTLE("Squirtle", 22, 4, true),
-//    BULBASAUR("Bulbasaur", 15, 7, true),
-//    PIDGEY("Pidgey", 30, 12, false),
-//    CATERPIE("Caterpie", 50, 30, false),
-//    MAGIKARP("Magikarp", 27, 8, false),
-//    DITTO("Ditto", 25, 10, false),
-//    SNORLAX("Snorlax", 15, 5, false);
-    ; // Get rid of this semi-colon when you uncomment the above
+    CHARMANDER("Charmander", 18, 5, true),
+    SQUIRTLE("Squirtle", 22, 4, true),
+    BULBASAUR("Bulbasaur", 15, 7, true),
+    PIDGEY("Pidgey", 30, 12, false),
+    CATERPIE("Caterpie", 50, 30, false),
+    MAGIKARP("Magikarp", 27, 8, false),
+    DITTO("Ditto", 25, 10, false),
+    SNORLAX("Snorlax", 15, 5, false);
 
     private String name;
     private Integer healthPoints;
@@ -49,7 +48,8 @@ public enum PokemonTypeLesson5 {
      * Prints out information about the Pokemon in a nice way
      */
     public String toString() {
-        throw new IllegalStateException("Not implemented toString yet!");
+        return "Type: " + name + " (HP: " + healthPoints + ")"
+                + " (CP: " + combatPower + ")";
     }
 
     /**
