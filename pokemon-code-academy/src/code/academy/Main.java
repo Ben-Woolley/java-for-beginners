@@ -44,14 +44,16 @@ public class Main {
      *        wildPokemonEncounter(trainer)
      */
     static void move(PokemonTrainer trainer) {
-        //TODO complete and enhance method
+        //TODO Lesson 6 Homework
 
-        //read in the user input and put it in a local variable called choice
-        int choice = -1;
+        //Advise the user on their options e.g. 1,2,3,4 for directions, or entering text, etc.
+
+        //read in the user input as their choice to a variable, can be a String or Integer
 
         // Tell user which way they are going
 
-        //generate a random value decide if we have a wildPokemonEncounter()
+        // ----- This last part is not part the homework -----
+        // generate a random value decide if we have a wildPokemonEncounter()
     }
 
     /**

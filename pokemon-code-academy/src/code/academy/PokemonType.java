@@ -33,4 +33,13 @@ public enum PokemonType {
     public static List<PokemonType> getWildPokemonTypes() {
         throw new IllegalStateException("Not implemented getWildPokemonTypes yet!");
     }
+
+    /**
+     * Given a Pokemon type, create an instance (use the Pokemon blueprint to create) of Pokemon.
+     * @param pokemonType the pokemon type to create one of.
+     * @return a pokemon of the pokemonType type.
+     */
+    public static Pokemon createPokemon(PokemonType pokemonType) {
+        throw new IllegalStateException("You haven't written createPokemon yet!");
+    }
 }
