@@ -24,7 +24,6 @@ public class PokemonLesson4 {
         return combatPower;
     }
 
-
     public void reduceHealth(Integer points) {
         if (healthPoints >= points) {
             healthPoints = healthPoints - points;
@@ -33,17 +32,16 @@ public class PokemonLesson4 {
         }
     }
 
-    /**
-     * Prints out information about the Pokemon in a nice way
-     */
     public String toString() {
-        return this.getName() + " [HP: " + this.getHealthPoints() + "][CP: " + this.getCombatPower() + "]";
+        return name + " (HP: " + healthPoints + ")"
+                + " (CP: " + combatPower + ")";
     }
 
     public static void main(String[] args) {
-        PokemonLesson4 pikachu = new PokemonLesson4("Pikachu", 12, 5);
-        pikachu.reduceHealth(13);
-        System.out.println("Remaining healthPoints: " + pikachu.healthPoints);
+        PokemonLesson4 pikachu = new PokemonLesson4("Pikachu", 20, 10);
+
+        System.out.println(pikachu.toString());
+        pikachu.reduceHealth(10);
         System.out.println(pikachu.toString());
     }
 }

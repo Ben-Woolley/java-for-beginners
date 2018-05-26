@@ -34,7 +34,7 @@ if false then the answer is true
 
 ## The new, new, new AnExampleProgram
 ```java
-class AnExampleProgram {
+public class AnExampleProgram {
 
   public static void main(String[] args) {
     Integer numberOfApples = 2;
@@ -65,27 +65,6 @@ public static Integer reduceHealth(Integer healthPoints, Integer combatPower) {
 ```
 This example prevents the `healthPoints` returned from going below 0.
 
-It can be used in our upcoming Pokémon game:
-```java
-public class Pokemon {
-  String name = "Pikachu";
-  Integer healthPoints = 20;
-  Integer combatPower = 8;
-
-  /* Given a certain amount of points passed in as argument, 
-  if my existing health points are greater than the given points
-  I want to deduct the given points away from my health points.
-  If my existing health points are less than the given points,   
-  I want to set my health points to 0.
-  */
-  public void reduceHealth(Integer points) {
-
-    // TODO your implementation here
-
-  }
-}
-```
-
 ## Collections
 Collections represent a bunch of things of the same type grouped together.  
 There are many types of collections (e.g. `list`, `set`, `map`) - we will focus on lists.
@@ -97,7 +76,7 @@ Pokemon squirtle = new Pokemon("Squirtle");
 Pokemon bulbasaur = new Pokemon("Bulbasaur");
 Pokemon charmander = new Pokemon("Charmander");
 
-List<Pokemon> starterPokemon = new ArrayList<Pokemon>();
+List<Pokemon> myPokemon = new ArrayList<Pokemon>();
 starterPokemon.add(squirtle);
 starterPokemon.add(charmander);
 starterPokemon.add(bulbsaur);

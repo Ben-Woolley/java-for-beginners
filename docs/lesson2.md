@@ -1,4 +1,4 @@
-# Lesson 2 - Debugging and additional concepts
+# Lesson 2 - Additional Java concepts
 
 ## Recap
 Remember our equation from the last lesson:
@@ -92,7 +92,7 @@ public class AnExampleProgram {
   public static void main(String[] args) {
     Integer numberOfApples = 2;
     Integer numberOfBananas = 4;
-    String numberOfOranges = ”2”;
+    Integer numberOfOranges = 2;
 
     System.out.println(MY_REQUIRED_FRUIT_INTAKE == sum(numberOfApples, numberOfBananas));
     System.out.println(MY_REQUIRED_FRUIT_INTAKE < sum(numberOfOranges, numberOfBananas));
@@ -103,8 +103,6 @@ public class AnExampleProgram {
   }
 }
 ```
-**Question**: What is wrong with this program?  
-I turned off the syntax highlighting so you couldn't cheat.
 
 # Homework
 * Add complexity to your example program by using more operators.

@@ -1,44 +1,9 @@
 package code.academy;
 
+/**
+ * The Pokemon type to be completed in Lesson 4
+ * TODO Lesson 4
+ */
 public class Pokemon {
-
-    private String name = "Missingno";
-    private Integer healthPoints = 20;
-    private Integer combatPower = 8;
-
-    public String getName() {
-        return name;
-    }
-
-    public Integer getHealthPoints() {
-        return healthPoints;
-    }
-
-    public Integer getCombatPower() {
-        return combatPower;
-    }
-
-
-    public void reduceHealth(Integer points) {
-        if (healthPoints >= points) {
-            healthPoints = healthPoints - points;
-        } else {
-            healthPoints = 0;
-        }
-    }
-
-    public static void main(String[] args) {
-        Pokemon pikachu = new Pokemon();
-        pikachu.reduceHealth(13);
-        System.out.println("Remaining healthPoints: " + pikachu.healthPoints);
-    }
-
-    /**
-     * Prints out information about the Pokemon in a nice way
-     */
-    public String toString() {
-        //TODO WEEK 4
-        return "Empty String";
-    }
 
 }

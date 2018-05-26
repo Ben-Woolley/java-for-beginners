@@ -15,7 +15,7 @@ After we have our local copy all that's left to do is import it into IntelliJ ([
 
 ### Lessons
 * [Lesson 1 - Introduction and basic java concepts](lesson1.md)
-* [Lesson 2 - Debugging and additional concepts](lesson2.md)
+* [Lesson 2 - Additional Java concepts](lesson2.md)
 * [Lesson 3 - Logic and making decisions](lesson3.md)
 * [Lesson 4 - Objects and Classes](lesson4.md)
 * [Lesson 5 - Pokémon Code Academy part 1](lesson5.md)

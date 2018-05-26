@@ -35,34 +35,62 @@ import java.util.List;
 A class is a representation of a type of an object in your program.
 
 It is a blueprint you can use to create objects of that type with unique values.
+They have:
+* Properties/Fields that are unique to each one you create
+* Methods to interact with the unique properties of the object
 
-For example, a Pokémon could be represented as:
+### Properties/Fields
+**Exercise**
+Our `Pokemon.class` is pretty empty. Lets add some properties to our `Pokemon.class`.
+We'll need a `name` (which is a `String`), an amount of `healthPoints` (which is an `Integer`),
+and `combatPower` (which is an `Integer` for how much damage a Pokemon can do).
+
+We'll make these properties private so we can control how other parts of the program access them.
+Here's a `main` to test your solution with:
+
 ```java
+public static void main(String[] args) {
+  Pokemon pikachu = new Pokemon();
+  pikachu.name = "Pikachu";
+  pikachu.healthPoints = 20;
+  pikachu.combatPower = 10;
 
-public class Pokemon {
-
-  String name;
-  Integer healthPoints;
-  Integer combatPower;
-
-  Pokemon(String pokemonName, Integer pokemonHealthPoints, Integer pokemonCombatPower) {
-    name = pokemonName;
-    healthPoints = pokemonHealthPoints;
-    combatPower = pokemonCombatPower;
-  }
-
+  System.out.println(pikachu.name);
+  System.out.println(pikachu.healthPoints);
+  System.out.println(pikachu.combatPower);
 }
 ```
 
-The method `Pokemon(...){...}` is called the **constructor** of the `Pokemon` class. It allows you to create new objects of the type `Pokemon`.
+### Constructors
+Constructors are used to create a new object of the specified type.
 
-### Using Constructors
 To create an object you must use the `new` keyword, e.g.
-`Pokemon pikachu = new Pokemon("Pikachu", 20, 8);`  
+`Pokemon pikachu = new Pokemon();`
 This results in a new instance of `Pokemon` stored in the variable `pikachu`.
 
+**Exercise**
+Add a constructor to your `Pokemon.class`, taking the arguments:
+* A `String` for the `pokemonName`
+* An `Integer` for the `pokemonHealthPoints`
+* An `Integer` for the `pokemonCombatPower`
+
+Then you can use these arguments to set values for your new `name`, `healthPoints`, and `combatPower`.
+Your test `main` can then become:
+
+```java
+public static void main(String[] args) {
+  Pokemon pikachu = new Pokemon("Pikachu", 20, 10);
+
+  System.out.println(pikachu.name);
+  System.out.println(pikachu.healthPoints);
+  System.out.println(pikachu.combatPower);
+}
+```
+It's now much lower effort to make a `Pokemon` and less prone to errors.
+
 ## Methods
-A Method is a code block you can use elsewhere in your code without duplication. For example:
+A Method is a code block you can use repeatedly without duplication. It also gives you control in how properties are used.
+For example the following gives you the name but won't let you set it:
 ```java
 public String getName() {
   return name;
@@ -75,17 +103,49 @@ Methods are given a name used to call them (in this case `getName`).
 
 Preferably you should use meaningful names for your methods so that you can understand the method will do from its name.
 
-## Time for an Exercise
-Let’s add methods to the `Pokemon` class, to be able to get `healthPoints`, `combatPower` and `name`. We can also add our `reduceHealthPoints` method now.
+### Getters - Retrieving properties
+**Exercise**
+Create methods that let people using a `Pokemon` *access* its properties.
+These are known as *accessors* or *getters* and by convention are written:
+```java
+public *ReturnType* get*ThingToReturn*() {
+  return *thingToReturn*;
+}
+```
 
-Use the constructor to create new `Pokemon` objects in the `main` method and test your methods.
+You can test these by updating your `main` to:
+```java
+public static void main(String[] args) {
+  Pokemon pikachu = new Pokemon("Pikachu", 20, 10);
 
-### Let's Create `toString()` Too
+  System.out.println(pikachu.getName());
+  System.out.println(pikachu.getHealthPoints());
+  System.out.println(pikachu.getCombatPower());
+}
+```
+
+### The `toString()` method
+`toString()` is a method every `class` in Java supports.
+This is because every `class` extends the `Object` type which has a default (and ugly) version.
+We can **override** this default with our own, better `toString()`.
 ```java
 public String toString() {
   //Print detailed information about your object
 }
 ```
+
+**Exercise**
+Make your own `toString()` for your `Pokemon.class` - this should return all the properties of a `Pokemon` is a useful way.
+(e.g. you might shorten `healthPoints` to "HP" when labelling in your `toString()`)
+
+This can be tested by changing your `main` to this:
+```java
+public static void main(String[] args) {
+  Pokemon pikachu = new Pokemon("Pikachu", 20, 10);
+  System.out.println(pikachu.toString());
+}
+```
+
 As an example, it can be implemented like this:
 ```java
 public String toString() {
@@ -94,11 +154,31 @@ public String toString() {
 }
 ```
 
+### Using our properties
+We need only one special method for our game: `reduceHealth`. It's behavior is:
+* It takes an `Integer` of `damage` the Pokemon is going to take
+* Reduce the Pokemon's `healthPoints` by the amount of `damage`
+  * If the `damage` is greater than the `healthPoints`, reduce `healthPoints` to zero instead
+
+**Exercise**
+Implement the `reduceHealth` method in the `Pokemon` class.
+
+You can test this by adding to the `main`:
+```java
+public static void main(String[] args) {
+  Pokemon pikachu = new Pokemon("Pikachu", 20, 10);
+
+  System.out.println(pikachu.toString());
+  pikachu.reduceHealth(10);
+  System.out.println(pikachu.toString());
+}
+```
+
 # Homework
 Implement the `PokemonTrainer` Class, the class should already exist in your project to add to.
+**You do not need to implement any of the other methods, these are for next time**
 ```java
-class PokemonTrainer
-{
+public class PokemonTrainer {
   // name
   // numberOfPokeBalls - start with 10
   // list of ownedPokemon
