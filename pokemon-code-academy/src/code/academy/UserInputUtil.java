@@ -25,6 +25,6 @@ public class UserInputUtil {
      *         regular expression, or is out of range
      */
     public static Integer readInteger() {
-        return SCANNER.nextInt();
+        return Integer.parseInt(SCANNER.nextLine());
     }
 }
