@@ -106,4 +106,4 @@ Finish up your `class` and `enum` files if you need to and polish them if you ca
 
 ---
 Next Lesson: [Pokémon Code Academy part 2](lesson6.md)  
-[Homepage](index.md)
+[Homepage](../index.md)

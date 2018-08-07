@@ -112,4 +112,4 @@ public class AnExampleProgram {
 
 ---
 Next Lesson: [Logic and making decisions](lesson3.md)  
-[Homepage](index.md)
+[Homepage](../index.md)

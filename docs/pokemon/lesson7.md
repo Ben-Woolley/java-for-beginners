@@ -65,4 +65,4 @@ You have officially created a bootleg Pokemon game as intended by this course!
 
 ---
 Next Lesson: [Final Thoughts](lesson8.md)  
-[Homepage](index.md)
+[Homepage](../index.md)

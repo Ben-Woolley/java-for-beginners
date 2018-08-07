@@ -190,4 +190,4 @@ public class PokemonTrainer {
 ```
 ---
 Next Lesson: [Pokémon Code Academy part 1](lesson5.md)  
-[Homepage](index.md)
+[Homepage](../index.md)
