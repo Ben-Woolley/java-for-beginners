@@ -1,5 +1,9 @@
 # Lesson 1 - Intro, installation and setup
 
+## Lesson Outcomes
+This session is for introducing the course and setting up students' machines.
+Please feel free to ask any questions during the session.
+
 ## Welcome to Java 101!
 This course is intended to be an introduction to **programming that happens to be in Java**.
 Many of the concepts you learn here are in the vast majority of programming languages out there; each one being a different tool for different jobs!
@@ -28,6 +32,7 @@ Because Java is used everywhere, it's used for many things. It is used across Ex
 ## Common pitfalls for beginners
 As with learning most things, we all make the same mistakes and assumptions, here is a list of what I've noticed while teaching this course.
 
+* **Lines that dont end in a bracket of some sort must end with a semicolon ;** - this is so Java knows the *expression* you're writing is done.
 * **Java is *case sensetive*** - you must match the case and be consistent with your naming, otherwise your program will break!
 * **Every open bracket, brace, and parenthesis must have a matching close** - this is how Java knows what context something is happening in. If they're in the wrong place you're likely going to run into problems.
 * **If your program is in an unhappy state please ask for help!** - It's much easier for us to fix something as soon as it goes wrong, rather than after you finish writing and it won't compile.
