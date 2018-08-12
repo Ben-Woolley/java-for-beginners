@@ -32,5 +32,13 @@ As with learning most things, we all make the same mistakes and assumptions, her
 * **Every open bracket, brace, and parenthesis must have a matching close** - this is how Java knows what context something is happening in. If they're in the wrong place you're likely going to run into problems.
 * **If your program is in an unhappy state please ask for help!** - It's much easier for us to fix something as soon as it goes wrong, rather than after you finish writing and it won't compile.
 
+## Setup
+Today we are going to get your machine ready for writing, compiling, and running Java programs:
+* [Git](https://git-scm.com/downloads)
+* [The Java 8 JDK (Java Development Kit)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* Install IntelliJ IDEA Community edition as per the [Setup Guide](../intellij-setup.md).
+
+We are then together going to **clone/download** the Java for beginners git project and **import** it into IntelliJ.
+
 ---
 [Homepage](../index.md)

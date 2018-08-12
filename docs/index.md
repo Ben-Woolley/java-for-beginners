@@ -7,7 +7,7 @@ For this course we are going to install:
 
 * [Git](https://git-scm.com/downloads)
 * [The Java 8 JDK (Java Development Kit)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-* [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/#section=mac)
+* [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download)
 ([Setup Guide](intellij-setup.md))
 
 We're then going to use git to **clone** (take a copy of) the course project which we can add to [from here](https://github.com/Ben-Woolley/java-for-beginners).  
