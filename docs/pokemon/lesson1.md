@@ -135,4 +135,4 @@ Right-click and run, the editor makes this really easy!
 
 ---
 Next Lesson: [Debugging and additional concepts](lesson2.md)  
-[Homepage](index.md)
+[Homepage](../index.md)

@@ -120,4 +120,4 @@ Test your code by calling the method in a `main` method and see how different va
 
 ---
 Next Lesson: [Objects and Classes](lesson4.md)  
-[Homepage](index.md)
+[Homepage](../index.md)

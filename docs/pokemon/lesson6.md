@@ -66,4 +66,4 @@ move(testTrainer);
 
 ---
 Next Lesson: [Pokémon Code Academy part 3](lesson7.md)  
-[Homepage](index.md)
+[Homepage](../index.md)
