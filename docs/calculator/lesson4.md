@@ -84,5 +84,23 @@ Create a `Circle` class. The class will have the property `diameter` and must im
 * `getArea` - which returns the area of the circle.
 * `getCircumference` - which returns the circumference of (distance around) the circle
 
+### Exercise 2
+Create a `Product` class. The class will have the properties:
+* `name` of the product
+* `price` of the product
+* `quantity` of the product purchased
+* `tax` being a percentage tax that applies to the product on purchase
+
+Then create a `InvoicePrinter` class with a function called `printInvoice` function.
+This function will take a `List<Product>` and print a receipt to the console. The receipt must contain:
+* Each item's price with and without tax
+* A summary at the bottom, with at least the total *with and without tax*
+
+You can enhance the receipt however you want after this, for example you could add:
+* Running totals
+* Tax percentage/amount on its own for each product
+* An argument to add a percentage tip
+* ...or anything else you can think of
+
 ---
 [Homepage](../index.md)
