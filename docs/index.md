@@ -17,7 +17,7 @@ After we have our local copy all that's left to do is import it into IntelliJ.
 * [Lesson 1 - Intro, installation and setup](calculator/lesson1.md)
 * [Lesson 2 - The basic building blocks of programming](calculator/lesson2.md)
 * [Lesson 3 - The less basic building blocks of programming](calculator/lesson3.md)
-* [Lesson 4 - TBC](calculator/lesson4.md)
+* [Lesson 4 - Classes and Methods](calculator/lesson4.md)
 * [Lesson 5 - TBC](calculator/lesson5.md)
 * [Lesson 6 - TBC](calculator/lesson6.md)
 * [Lesson 7 - TBC](calculator/lesson7.md)

@@ -181,6 +181,26 @@ Three different types of brackets are used often in Java, each one has its own p
 * `[Brackets]` let you get an item from an **array**
 * `(Parentheses)` control the order of operation as in maths, and are used to give things as parameters to methods/functions
 
+## Exercises
+### Exercise 1
+In a `main`, define a `String`, `Integer`, and `Boolean` variable.
+1. `System.out.println` (print) each of them separately.
+2. Print them together in a sentence (which may or may not make sense).
+
+### Exercise 2
+In a `main`, define 2 `Integer` variables for the `side`s of a right-angled triangle.
+Use [Pythagoras' theorem]() to calculate the length of the third side and print a message to the console,
+such as `A right angle triangle with first side length 1 and second side length 2 has third side length 2.2360679775`.
+
+You will have to use `Math.sqrt()` to get the square root of a value.
+This must be **imported** (pulled in from Java) to use, which is done by adding `import java.util.Math;` to the top of your Java file (below the `package`).
+
+### Exercise 3
+Make a `List` of the names of your favourite foods (in order of most to least favourite). With this list:
+1. Print them out on a line each.
+2. Then use it in a sentence e.g. `If I could, I would eat ice cream for every meal`.
+3. Then add the rank of each food to the beginning of each line e.g. `1) If I could...`.
+
 ## Lesson Summary
 Today we've seen the essentials of java and programming - namely types, variables, and conditional execution.
 
