@@ -70,27 +70,8 @@ i.e. `public class Calculator { ... }` must exist in `Calculator.java`
 * You cannot name variables after **reserved words** e.g. you cannot have a variant `Integer int = 1;` because `int` is reserved by Java.
 
 ## Exercises
-### Exercise 1
-Your first challenge is to complete a classic "FizzBuzz" question used to test if a software developer can actually develop software.
-> Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
-To do this I'm asking you to create a new class `FizzBuzz` whose `main` method does this when run.
+For the exercise list [click here](https://ben-woolley.github.io/java-for-beginners/exercises/exercises-ch-2-3.html)
 
-### Exercise 2
-Write a program that draws fir trees of width `n`, where `n` is an even number.
-The tree will get 2 characters thinner for each line higher it is.
-e.g. `drawTree(4)` would draw
-```
- /\
-/__\
- ||
-```
-and `drawTree(6)` would draw
-```
-  /\
- /  \
-/____\
-  ||
-```
 ---
 [Homepage](../index.md)
