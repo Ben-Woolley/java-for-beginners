@@ -69,6 +69,28 @@ e) Test your methods by instantiating two bank accounts in a class with a main m
 * Have a name and contact details (Address/Phone Number etc)
 * Have getter and setter methods for all fields
 * Have methods used to withdraw and deposit. Note: withdrawal should not be possible if the bank account's balance falls below 0.
+* Have a transfer method that takes in an AccountHolder object as an argument and an integer representing the sum to be transfered. That sum will be removed from the "source" account and added to the "destination" account (i.e the account holder who calls the method transfers to the one in the argument). E.g
+
+```java
+AccountHolder bob = new AccountHolder(); // assume Bob has $100 in his BankAccount object
+AccountHolder alice = new AccountHolder(); // assume Alice has $200 in her BankAccount object
+bob.transfer(alice, 100);
+bob.getAccountBalance(); // would return $0
+alice.getAccountBalance(); // would return $300
+
+// think about constraints accordingly, such as using the transfer method when your bank account is negative.
+```
+
 
 Change the code accordingly in the BankAccount class to reflect your AccountHolder implementation.
+
+* In the `HomeWorkMain.java` class, create two instances of an AccountHolder. Using the two instances you should successfully:
+    - be able to get the balance of both account holders' accounts;
+    - be able to use the withdraw method on both;
+    - be able to use the deposit method on both and get the account balances;
+    - be able to transfer money from one account holder to another;
+
+## Tests:
+
+The folder `intro-to-java/test/eca/lessons/lesson4/` contains the tests for this exercise. To make sure you get the correct output and your program works as expected, you should run the tests for each exercise in order (`BankAccountTest`, `AccountHolderTest` and then `HomeWorkMainTest`)
 
