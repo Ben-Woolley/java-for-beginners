@@ -45,7 +45,7 @@ public class BankAccountTest {
 		BankAccount acc = new BankAccount("foo", "bar", 0);
 		Integer expBalance = 0;
 
-		wacc.deposit(0);
+		acc.deposit(0);
 
 		assertEquals(expBalance, acc.getBalance());
 	}
