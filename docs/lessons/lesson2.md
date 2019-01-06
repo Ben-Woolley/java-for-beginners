@@ -3,12 +3,14 @@
 ## Lesson Outcomes
 This lesson we're going to cover the basic essentials that make programming so powerful:
 * **Variables** and **Types**
+* **Operators** on these types
 * **Conditional Execution** of code paths
 * **Collections** and **loops**
+* **Rules** and **Conventions** of Java
 
 On top of these concepts you only need to know some of the **functions/methods** that are available on the **types** you are using.
 
-By the end of this lesson you should be able to **understand what a simple Java program is doing**
+By the end of this lesson you should be able to **understand what a simple Java program is doing**. You should also be able to write your first Java program with output depending on multiple conditions.
 
 ## But first - Hello, World!
 Before we should write anything else, it's probably a good start to be able to run it!
@@ -94,6 +96,53 @@ Java again lets you define booleans as `true` and `false` directly.
 ```java
 Boolean enabled = true;
 ```
+
+##  Operators
+### Comparison Operators
+We often want to compare two values to trigger an `if` statement. There are plenty of options to use.
+
+* **Equality** can be checked be using `==` e.g. `2 == 3` would return false.
+* Checking that two values are **not equal** can be done using `!=` e.g. `2 != 3` would return true.
+
+These work on all types, but there are some specialized for particular types.
+
+#### Arithmetic Comparison
+Java provides the regular assortment of number comparison operators that work on the common **number types**:
+* `1 < 2` - `1` is less than `2`
+* `1 > 2` - `1` is greater than `2`
+* `1 <= 2` - `1` is less than or equal to `2`
+* `1 >= 2` - `1` is greater than or equal to `2`
+
+### Boolean Operators
+Java provides boolean operators that we can use just like arithmetic operators, but just on `Boolean` objects.
+The essential operators are AND, OR, and NOT.
+
+#### (inclusive) OR (`||`)
+``Boolean trueOrFalse = true || false;``
+* If any are `true` the answer is `true`.
+* If all are `false`, then the answer is `false`.
+
+|           | `true`  | `false` |
+| ---       | ---   | ---   |
+| `true`  | `true`  | `true`  |
+| `false` | `true`  | `false` |
+
+#### AND (`&&`)
+``Boolean trueAndFalse = true && false;``
+* If any are `false` the answer is false.
+* If all are true, then the answer is true.
+
+|           | `true`  | `false` |
+| ---       | ---   | ---   |
+| `true`  | `true`  | `false`  |
+| `false` | `false`  | `false` |
+
+#### NOT (`!`)
+``Boolean notTrue = !true;``
+* if `true` then answer is `false`.
+* if `false` then the answer is `true`.
+
+So `!true == false`, and `!false == true`
 
 ## Conditional Execution
 Programming is powerful because we can choose whether to do things or not **based on conditions about data**. This is enabled by the `if` statement:
@@ -181,25 +230,21 @@ Three different types of brackets are used often in Java, each one has its own p
 * `[Brackets]` let you get an item from an **array**
 * `(Parentheses)` control the order of operation as in maths, and are used to give things as parameters to methods/functions
 
+## Coding Conventions
+To make everyone's lives easier, programming languages have agreed writing conventions.
+
+The core of which is naming style:
+* Variables, function names, and arguments are **lowerCamelCase**
+* Classes are **UpperCamelCase**
+* Constants are **UNDERSCORE_SEPARATED_ALL_CAPS**
+
+There are also some essential rules that if not followed will cause your pogram to not compile:
+* The **class name** must be the same as the **.java file name**
+i.e. `public class Calculator { ... }` must exist in `Calculator.java`
+* You cannot name variables after **reserved words** e.g. you cannot have a variant `Integer int = 1;` because `int` is reserved by Java.
+
 ## Exercises
-### Exercise 1
-In a `main`, define a `String`, `Integer`, and `Boolean` variable.
-1. `System.out.println` (print) each of them separately.
-2. Print them together in a sentence (which may or may not make sense).
-
-### Exercise 2
-In a `main`, define 2 `Integer` variables for the `side`s of a right-angled triangle.
-Use [Pythagoras' theorem]() to calculate the length of the third side and print a message to the console,
-such as `A right angle triangle with first side length 1 and second side length 2 has third side length 2.2360679775`.
-
-You will have to use `Math.sqrt()` to get the square root of a value.
-This must be **imported** (pulled in from Java) to use, which is done by adding `import java.util.Math;` to the top of your Java file (below the `package`).
-
-### Exercise 3
-Make a `List` of the names of your favourite foods (in order of most to least favourite). With this list:
-1. Print them out on a line each.
-2. Then use it in a sentence e.g. `If I could, I would eat ice cream for every meal`.
-3. Then add the rank of each food to the beginning of each line e.g. `1) If I could...`.
+The exercise sheet for this topic can be found [here](../exercises/exercise-list-lesson2).
 
 ## Lesson Summary
 Today we've seen the essentials of java and programming - namely types, variables, and conditional execution.

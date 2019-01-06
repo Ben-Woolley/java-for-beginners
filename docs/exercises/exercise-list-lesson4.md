@@ -1,6 +1,6 @@
-# Exercise list _Chapter 4_
+# Exercise list _Chapter 3_
 
-* This is the exercise list for [lesson 4](https://ben-woolley.github.io/java-for-beginners/calculator/lesson4.html) - __Classes and Methods__
+* This is the exercise list for [lesson 4](../lessons/lesson3) - __Classes and Methods__
 
 ## Exericse 1
 
