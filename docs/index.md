@@ -18,10 +18,7 @@ After we have our local copy all that's left to do is import it into IntelliJ.
 * [Lesson 2 - The basic building blocks of programming](lessons/lesson2.md)
 * [Lesson 3 - The less basic building blocks of programming](lessons/lesson3.md)
 * [Lesson 4 - Classes and Methods](lessons/lesson4.md)
-* [Lesson 5 - Testing your code](lessons/lesson5.md)
-* [Lesson 6 - TBC](lessons/lesson6.md)
-* [Lesson 7 - TBC](lessons/lesson7.md)
-* [Lesson 8 - TBC](lessons/lesson8.md)
 
 #### Extras
 * [Using the debugger](extra/debugging.md)
+* [Testing your code](extra/testing.md)

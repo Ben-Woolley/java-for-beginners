@@ -1,4 +1,4 @@
-package eca.lessons.lesson5;
+package eca.extras.testing;
 
 public class FizzBuzzGenerator {
 

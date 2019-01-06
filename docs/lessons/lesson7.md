@@ -1,4 +1,0 @@
-# Lesson
-
----
-[Homepage](../index.md)
