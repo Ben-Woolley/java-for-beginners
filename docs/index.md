@@ -16,8 +16,7 @@ After we have our local copy all that's left to do is import it into IntelliJ.
 ### Java 101 2.0
 * [Lesson 1 - Intro, installation and setup](lessons/lesson1.md)
 * [Lesson 2 - The basic building blocks of programming](lessons/lesson2.md)
-* [Lesson 3 - The less basic building blocks of programming](lessons/lesson3.md)
-* [Lesson 4 - Classes and Methods](lessons/lesson4.md)
+* [Lesson 3 - Classes and Methods](lessons/lesson3.md)
 
 #### Extras
 * [Using the debugger](extra/debugging.md)

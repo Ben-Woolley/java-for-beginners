@@ -1,6 +1,6 @@
 # Exercise list _Chapter 3_
 
-* This is the exercise list for [lesson 4](../lessons/lesson3) - __Classes and Methods__
+* This is the exercise list for [lesson 3](../lessons/lesson3) - __Classes and Methods__
 
 ## Exericse 1
 
@@ -92,5 +92,5 @@ Change the code accordingly in the BankAccount class to reflect your AccountHold
 
 ## Tests:
 
-The folder `intro-to-java/test/eca/lessons/lesson4/` contains the tests for this exercise. To make sure you get the correct output and your program works as expected, you should run the tests for each exercise in order (`BankAccountTest`, `AccountHolderTest` and then `HomeWorkMainTest`)
+The folder `intro-to-java/test/eca/lessons/lesson3/` contains the tests for this exercise. To make sure you get the correct output and your program works as expected, you should run the tests for each exercise in order (`BankAccountTest`, `AccountHolderTest` and then `HomeWorkMainTest`)
 

@@ -1,4 +1,4 @@
-package eca.lessons.lesson4;
+package eca.lessons.lesson3;
 
 import org.junit.Test;
 

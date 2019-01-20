@@ -1,4 +1,4 @@
-# Lesson 4 - Classes and methods
+# Lesson 3 - Classes and methods
 
 ## Lesson Outcomes
 Today we'll be expanding on Java's capabilities by introducing its **object-oriented** features.

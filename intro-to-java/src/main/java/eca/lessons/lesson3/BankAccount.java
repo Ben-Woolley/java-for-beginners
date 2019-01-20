@@ -1,4 +1,4 @@
-package eca.lessons.lesson4;
+package eca.lessons.lesson3;
 
 public class BankAccount {
 	private String accountHolder;
