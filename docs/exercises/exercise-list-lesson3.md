@@ -2,7 +2,33 @@
 
 * This is the exercise list for [lesson 3](../lessons/lesson3) - __Classes and Methods__
 
-## Exericse 1
+## Circles
+### Exercise 1
+Create a `Circle` class. The class will have the property `diameter` and must implement the following methods:
+* `getArea` - which returns the area of the circle.
+* `getCircumference` - which returns the circumference of (distance around) the circle
+
+### Exercise 2
+Create a `Product` class. The class will have the properties:
+* `name` of the product
+* `price` of the product
+* `quantity` of the product purchased
+* `tax` being a percentage tax that applies to the product on purchase
+
+Then create a `InvoicePrinter` class with a function called `printInvoice` function.
+This function will take a `List<Product>` and print a receipt to the console. The receipt must contain:
+* Each item's price with and without tax
+* A summary at the bottom, with at least the total *with and without tax*
+
+You can enhance the receipt however you want after this, for example you could add:
+* Running totals
+* Tax percentage/amount on its own for each product
+* An argument to add a percentage tip
+* ...or anything else you can think of
+
+
+## Banking
+### Exericse 1
 
 * The `Java class` called `BankAccount` is started below. An object of type `BankAccount` represents the basics of a commercial account, it has the following instance variables to hold data:
    - __AccountHolder__ : String -> represents the name of the person who owns the bank account.
@@ -61,7 +87,7 @@ public String compareAccounts(BankAccount compareAccount);
 e) Test your methods by instantiating two bank accounts in a class with a main method.
 
 
-## Exercise 2
+### Exercise 2
 
  Using the class and methods from above, create a class called `AccountHolder`. Your AccountHolder should:
 
@@ -90,7 +116,7 @@ Change the code accordingly in the BankAccount class to reflect your AccountHold
     - be able to use the deposit method on both and get the account balances;
     - be able to transfer money from one account holder to another;
 
-## Tests:
+### Tests
 
 The folder `intro-to-java/test/eca/lessons/lesson3/` contains the tests for this exercise. To make sure you get the correct output and your program works as expected, you should run the tests for each exercise in order (`BankAccountTest`, `AccountHolderTest` and then `HomeWorkMainTest`)
 
