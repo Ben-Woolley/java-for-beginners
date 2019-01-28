@@ -29,6 +29,11 @@ a > b // true
 a < b // false
 ```
 
+### Hello, *Insert name here*!
+Write your own "Hello, world!" program, then extend it to take a name as input from the console and say hello to the inputted name instead.
+
+You should use `UserInputUtil` in the `eca.util` package, you will have to `import` it.
+
 ### OddOrEven
 Write a Java program to accept a number and check the number is even or not. Output the `Boolean` value of  the result
 
@@ -44,6 +49,15 @@ b = 5
 c = 15
 print true (a + b = c)
 ```
+
+### Guess What Number I'm Thinking
+Write a program that thinks of a random number between 1 and 10.
+Let the user enter a number, if it is correct print "You win!" otherwise print "You lose!".
+
+You will need some way to get a random number within a range, [java has many ways and developers are still arguing over which are the best](https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java).
+`new Random().nextInt(*your upper bound*)` is the shortest (but not necessarily the best) way to get a random Integer.
+
+You should also use `UserInputUtil` in the `eca.util` package, you will have to `import` it.
 
 ### Pythagoras Calculation
 In a `main`, define 2 `Integer` variables for the `side`s of a right-angled triangle.
@@ -111,3 +125,7 @@ e.g for a number a = 1234, print: `10` (1 + 2 + 3 + 4)
 
 ___Hint___: You will need to make use of `.toString()`, and `.split()` on a `String`
 
+# Credits
+Some exercises inspired/sourced from:
+* https://www.w3resource.com/java-exercises/
+* https://adriann.github.io/programming_problems.html
