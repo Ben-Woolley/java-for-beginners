@@ -170,6 +170,8 @@ if (numberToCheck < 0) {
 }
 ```
 
+**🛑 [Variables and Basic Operators exercises](../exercises/exercise-list-lesson2) 🛑**
+
 ## Collections and Loops
 
 Loops let us do the same thing over and over again almost infinitely if we want - without duplicating the code we want to do over and over. There are 2 main types in Java (plus a newer type we won't be covering in detail in this course).
@@ -222,6 +224,8 @@ while (condition) {
 There is nothing that Java can do to stop you from writing a condition that will never be `false`, meaning you can write loops that have no way of stopping.
 It is however very useful in the right contexts e.g. taking user input over and over again.
 
+**🛑 [Lists and Loops exercises](../exercises/exercise-list-lesson2) 🛑**
+
 ## Code Structure
 A word about how we define the **context** of where we are in a piece of code:
 
@@ -244,7 +248,8 @@ i.e. `public class Calculator { ... }` must exist in `Calculator.java`
 * You cannot name variables after **reserved words** e.g. you cannot have a variant `Integer int = 1;` because `int` is reserved by Java.
 
 ## Exercises
-The exercise sheet for this topic can be found [here](../exercises/exercise-list-lesson2).
+The exercises for this topic can be found [here](../exercises/exercise-list-lesson2).
+Once complete with the first two sections, attempt the "Advanced and Extra" section.
 
 ## Lesson Summary
 Today we've seen the essentials of java and programming - namely types, variables, and conditional execution.

@@ -1,4 +1,4 @@
-# Exercise List
+# Exercise List Topic 2
 
 This exercise list is to practice the content presented in [lecture 2](../lessons/lesson2)
 

@@ -1,6 +1,6 @@
-# Exercise list _Chapter 3_
+# Exercise list Topic 3
 
-* This is the exercise list for [lesson 3](../lessons/lesson3) - __Classes and Methods__
+This is the exercise list for [lesson 3](../lessons/lesson3) - __Classes and Methods__
 
 ## Circles
 ### Exercise 1
