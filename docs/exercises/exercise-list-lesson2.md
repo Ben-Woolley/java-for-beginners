@@ -67,6 +67,24 @@ such as `A right angle triangle with first side length 1 and second side length 
 You will have to use `Math.sqrt()` to get the square root of a value.
 This must be **imported** (pulled in from Java) to use, which is done by adding `import java.util.Math;` to the top of your Java file (below the `package`).
 
+### Basic Calculator
+Create a program that takes 3 inputs (using `UserInputUtil` again) individually:
+* A first number
+* A second number
+* A **mathematical operator** as a `String`
+
+Pretty-print the mathematical calculation requested, and then the result.
+
+e.g. an input of:
+```
+1
+2
++
+```
+would result in printing `1 + 2 = 3`
+
+**Bonus** - if the operator entered is not supported, print `Unsupported operator *operator*`.
+
 ## Lists and Loops
 ### Printing Lists
 Make a `List` of the names of your favourite foods (in order of most to least favourite). With this list:
