@@ -28,7 +28,7 @@ Each has it's own specialty or programming opinions that makes it the best for c
 * **Python** is a general-purpose language focusing on readability
 
 These languages end up running on computers in one of two ways:
-* The program source code is **compiled** down to machine-understandable code.
+* The program source code is **compiled** (aka translated) to machine-understandable code **before it can be run**.
     - e.g. C, C++, Java*
 * An **interpreter** runs the program that knows how to turn your source into machine-understandable code **while it runs**.
     - e.g. Python, Java*
@@ -56,7 +56,7 @@ As with learning most things, we all make the same mistakes and assumptions, her
 * **Java is *case sensitive*** - you must match the case and be consistent with your naming, otherwise your program will break!
 * **Every open bracket, brace, and parenthesis must have a matching close** - this is how Java knows what context something is happening in. If they're in the wrong place you're likely going to run into problems.
 * **If your program is in an unhappy state please ask for help!** - It's much easier for us to fix something as soon as it goes wrong, rather than after you finish writing and it won't compile.
-
+* **Coding is both a science and an art** - There usually is more than one way of solving a problem. By all means consult with your fellow learners, but don't panic if their solutions are not the same as yours.
 ## Setup
 Today we are going to get your machine ready for writing, compiling, and running Java programs:
 * [Git](https://git-scm.com/downloads)

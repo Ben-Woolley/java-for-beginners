@@ -14,12 +14,13 @@ Programming or software development is essentially **writing the general solutio
 
 So programming doesn't solve your problems for you, it enables you to:
 1. use a computer to do the brainwork that you don't want to do yourself
-2. on tasks you can figure out the solution to.
+2. automate tasks that you can figure out the solution to.
 
 ### An Exercise
 Imagine a person who has no idea how anything works, but can carry out basic instructions.
 
-How would you tell them how to make a cup of tea?
+How would you tell them how to make a cup of tea?  
+Write down your instructions, we'll make use of these later.
 
 ## Pseudocode
 Pseudocode is an almost-bridge between normal English statements and a fully functional programming language. It's a way of expressing the logic you want to achieve without having to go straight into writing code.  
@@ -59,9 +60,10 @@ if (it is the morning and it is the weekend)
 else
   go to work
 
-if (the user is the super user)
+set user to super user
+if (user is super user)
   user can do anything
-else if (the user has admin privileges)
+else if (user is admin)
   user can do admin tasks
 else
   user has no special permissions
@@ -95,7 +97,7 @@ Write pseudocode for the following:
 Provides a counter which you can use for whatever you want. The counter can:
 * Start at whatever value
 * End at whatever value
-* Increment at whatever value (including going down)
+* Increment by whatever value (including going down)
 
 ```
 for (counter from *lowerBound* to *upperBound*)
@@ -189,6 +191,11 @@ else
 ```
 
 ### Exercises
+#### Exercise 1
+Thinking back to our previous exercise, how would you make a cup of tea?
+Give your answer in pseudocode.
+
+#### Exercise N
 TBD
 
 ---
