@@ -14,7 +14,7 @@ Programming or software development is essentially **writing the general solutio
 
 So programming doesn't solve your problems for you, it enables you to:
 1. use a computer to do the brainwork that you don't want to do yourself
-2. on tasks you can figure out the solution to.
+2. automate tasks that you can figure out the solution to.
 
 ### An Exercise
 Imagine a person who has no idea how anything works, but can carry out basic instructions.
