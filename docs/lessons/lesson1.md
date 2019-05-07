@@ -69,7 +69,7 @@ else
   user has no special permissions
 ```
 
-#####:boom: Whiteboard quick-fire! :boom:
+##### :boom: Whiteboard quick-fire! :boom:
 Write pseudocode for the following:
 > If Polly has been good, Santa will give her a toy. If Polly has been bad, Polly's gift will be a lump of coal.
 
@@ -89,7 +89,7 @@ for (each day of the month)
   display the day, weekday, and events on the day
 ```
 
-#####:boom: Whiteboard quick-fire! :boom:
+##### :boom: Whiteboard quick-fire! :boom:
 Write pseudocode for the following:
 > Write out a receipt for each item in Santa's sack of presents.
 
@@ -116,7 +116,7 @@ for (counter from 1 to 7)
   print the counter, next to to it also print weekDays[counter] (the weekday in the counter'th position)
 ```
 
-#####:boom: Whiteboard quick-fire! :boom:
+##### :boom: Whiteboard quick-fire! :boom:
 Write pseudocode for the following:
 > Happy Street has house numbers 1-38. Santa wants a list of house numbers printed out so he can tick off each house he's visited.
 
@@ -139,7 +139,7 @@ while (counter is less than 10)
   set counter to counter + 1
 ```
 
-#####:boom: Whiteboard quick-fire! :boom:
+##### :boom: Whiteboard quick-fire! :boom:
 Write pseudocode for the following:
 > Santa doesn't know how many houses are on Long Street but he knows he'll get too tired if he visits too many. He will keep visiting houses until he's visited 108 in total.
 
