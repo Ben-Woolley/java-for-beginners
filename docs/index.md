@@ -14,7 +14,8 @@ We're then going to use git to **clone** (take a copy of) the course project whi
 After we have our local copy all that's left to do is import it into IntelliJ.
 
 ### Java 101 2.0
-* [Lesson 1 - Intro, installation and setup](lessons/lesson1.md)
+* [Lesson 0 - Intro, installation and setup](lessons/lesson0.md)
+* [Lesson 1 - Describing how to solve problems](lessons/lesson1.md)
 * [Lesson 2 - The basic building blocks of programming](lessons/lesson2.md)
 * [Lesson 3 - Classes and Methods](lessons/lesson3.md)
 
