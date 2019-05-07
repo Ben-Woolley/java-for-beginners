@@ -59,9 +59,10 @@ if (it is the morning and it is the weekend)
 else
   go to work
 
-if (the user is the super user)
+set user to super user
+if (user is super user)
   user can do anything
-else if (the user has admin privileges)
+else if (user is admin)
   user can do admin tasks
 else
   user has no special permissions
