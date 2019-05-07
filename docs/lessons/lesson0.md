@@ -28,7 +28,7 @@ Each has it's own specialty or programming opinions that makes it the best for c
 * **Python** is a general-purpose language focusing on readability
 
 These languages end up running on computers in one of two ways:
-* The program source code is **compiled** down to machine-understandable code.
+* The program source code is **compiled** (aka translated) to machine-understandable code **before it can be run**.
     - e.g. C, C++, Java*
 * An **interpreter** runs the program that knows how to turn your source into machine-understandable code **while it runs**.
     - e.g. Python, Java*
