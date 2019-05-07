@@ -87,7 +87,7 @@ for (each day of the month)
 Provides a counter which you can use for whatever you want. The counter can:
 * Start at whatever value
 * End at whatever value
-* Increment at whatever value (including going down)
+* Increment by whatever value (including going down)
 
 ```
 for (counter from *lowerBound* to *upperBound*)
