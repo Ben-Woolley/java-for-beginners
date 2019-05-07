@@ -19,7 +19,8 @@ So programming doesn't solve your problems for you, it enables you to:
 ### An Exercise
 Imagine a person who has no idea how anything works, but can carry out basic instructions.
 
-How would you tell them how to make a cup of tea?
+How would you tell them how to make a cup of tea?  
+Write down your instructions, we'll make use of these later.
 
 ## Pseudocode
 Pseudocode is an almost-bridge between normal English statements and a fully functional programming language. It's a way of expressing the logic you want to achieve without having to go straight into writing code.  
@@ -171,6 +172,11 @@ else
 ```
 
 ### Exercises
+#### Exercise 1
+Thinking back to our previous exercise, how would you make a cup of tea?
+Give your answer in pseudocode.
+
+#### Exercise N
 TBD
 
 ---
