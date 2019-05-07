@@ -67,6 +67,10 @@ else
   user has no special permissions
 ```
 
+#####:boom: Whiteboard quick-fire! :boom:
+Write pseudocode for the following:
+> If Polly has been good, Santa will give her a toy. If Polly has been bad, Polly's gift will be a lump of coal.
+
 #### for-loops
 For loops enable you to do something multiple times, there are 2 varieties:
 
@@ -82,6 +86,10 @@ e.g.
 for (each day of the month)
   display the day, weekday, and events on the day
 ```
+
+#####:boom: Whiteboard quick-fire! :boom:
+Write pseudocode for the following:
+> Write out a receipt for each item in Santa's sack of presents.
 
 #### for with counter
 Provides a counter which you can use for whatever you want. The counter can:
@@ -106,6 +114,13 @@ for (counter from 1 to 7)
   print the counter, next to to it also print weekDays[counter] (the weekday in the counter'th position)
 ```
 
+#####:boom: Whiteboard quick-fire! :boom:
+Write pseudocode for the following:
+> Happy Street has house numbers 1-38. Santa wants a list of house numbers printed out so he can tick off each house he's visited.
+
+Extension:
+> Santa is feeling lazy so he only wants to visit every *other* house. Print a list with every 2nd house instead.
+
 #### While loop
 This is another loop - enabling you to do something many times.  
 This one differs in that it depends on any expression that will result in a true/false value.
@@ -121,6 +136,10 @@ while (counter is less than 10)
   print counter
   set counter to counter + 1
 ```
+
+#####:boom: Whiteboard quick-fire! :boom:
+Write pseudocode for the following:
+> Santa doesn't know how many houses are on Long Street but he knows he'll get too tired if he visits too many. He will keep visiting houses until he's visited 108 in total.
 
 ### Examples
 #### Example 1 - Is it raining?
