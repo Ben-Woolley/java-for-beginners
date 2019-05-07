@@ -23,7 +23,7 @@ Programming languages sit on top of these primitive instructions and give us a m
 The world now has more programming languages than it knows what to do with - built not only on top of machine code but also on each other.
 
 Each has it's own specialty or programming opinions that makes it the best for certain jobs, for example:
-* **C** is a language written originally for building operating systems for computers. It exposes enough of the machine level to let clever people to magic, and dangerous people cause many more bugs.
+* **C** is a language written originally for building operating systems for computers. It exposes enough of the machine level to let clever people do magic, and dangerous people cause many more bugs.
 * **R** specializes in statistical computing
 * **Python** is a general-purpose language focusing on readability
 
