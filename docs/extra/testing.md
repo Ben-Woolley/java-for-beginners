@@ -85,6 +85,3 @@ Based on the behavior we expect of `FizzBuzzGenerator` - write the remaining uni
 
 ### Exercise 2
 Create unit tests for the methods of the `Circle` class you created in the previous lesson.
-
----
-[Homepage](../index.md)

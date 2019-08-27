@@ -18,6 +18,3 @@ While at a breakpoint you can see what all the variables available look like in 
 ### Exercise
 Try out debugging and using each of the features.
 To try step in and step out, create your own method that you call from the `main` method. This can be as simple as `sum(Integer a, Integer b)` that adds `a` and `b` together.
-
----
-[Homepage](../index.md)
