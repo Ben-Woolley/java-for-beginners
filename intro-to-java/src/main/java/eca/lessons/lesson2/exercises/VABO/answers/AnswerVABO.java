@@ -13,7 +13,7 @@ public class AnswerVABO {
         System.out.println(numberOfEmployees);
         System.out.println(memberOfExpediaGroup);
 
-        // Print them together, forming a (non)sesical sentence
+        // Print them together, forming a sentence (that may or may not make sense!)
         System.out.println(brand + " has " + numberOfEmployees + " employees. Is it a member of Expedia Group? " + memberOfExpediaGroup);
     }
 }
