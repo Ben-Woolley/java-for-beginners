@@ -8,7 +8,7 @@ public class AnswersGWNT {
     static String YOU_WIN = "You Win!";
     static String YOU_LOSE = "You Lose!";
 
-    public static String guessWhatNumber() {
+    public static void guessWhatNumber() {
         // Get a random number
         Integer randomNumber = new Random().nextInt(9) + 1; // We add 1 because nextInt returns a random number from 0 to n inclusive
 
@@ -22,10 +22,8 @@ public class AnswersGWNT {
         // If the user's number matches the random number, they win!
         if (correct) {
             System.out.println(YOU_WIN);
-            return YOU_WIN;
         } else {
             System.out.println(YOU_LOSE);
-            return YOU_LOSE;
         }
     }
 
