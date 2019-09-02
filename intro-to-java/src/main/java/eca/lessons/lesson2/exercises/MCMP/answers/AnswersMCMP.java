@@ -16,7 +16,7 @@ public class AnswersMCMP {
            between a and b.
          */
         System.out.println(a == b);      // Equality
-        System.out.println(a.equals(b)); // Equality (that works for any type
+        System.out.println(a.equals(b)); // Equality (that works for any type)
         System.out.println(a > b); // Greater than
         System.out.println(a >= b); // Greater than or equal
         System.out.println(a < b); // Less than
