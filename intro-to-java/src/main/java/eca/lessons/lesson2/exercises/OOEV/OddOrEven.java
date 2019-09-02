@@ -6,4 +6,8 @@ public class OddOrEven {
         // Replace false with the result of your solution
         return false;
     }
+
+    public static void main(String[] args) {
+        System.out.println(isOdd(4));
+    }
 }
