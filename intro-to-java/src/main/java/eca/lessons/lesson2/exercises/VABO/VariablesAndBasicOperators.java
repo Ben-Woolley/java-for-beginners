@@ -9,7 +9,7 @@ public class VariablesAndBasicOperators {
         // Print them using System.out.println
 
 
-        // Print them together, forming a (non)sesical sentence
+        // Print them together, forming a sentence (that may or may not make sense!)
 
 
     }
