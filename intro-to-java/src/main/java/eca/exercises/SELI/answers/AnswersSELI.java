@@ -42,6 +42,7 @@ public class AnswersSELI {
     public static Boolean contains(List<Integer> numbers, Integer toFind) {
         // Find toFind in numbers - return true if it exists, and false otherwise
 
+        // Keep track of whether it is found outside of the loop
         Boolean foundNumber = false;
         for (Integer number : numbers) {
             if (number.equals(toFind)) {
