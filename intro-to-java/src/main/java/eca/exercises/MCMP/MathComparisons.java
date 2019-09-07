@@ -9,8 +9,8 @@ public class MathComparisons {
         /* Print the result of:
             - Equal to
             - Greater than
-            - Greater than or equal
             - Less than
+            - Greater than or equal
             - Less than or equal
            between a and b.
          */
