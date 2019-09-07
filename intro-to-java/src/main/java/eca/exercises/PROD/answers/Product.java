@@ -14,14 +14,13 @@ public class Product {
     private Integer quantity;
     private Double tax;
 
+    // Create a constructor, and create getters for these properties
     public Product(String name, Double price, Integer quantity, Double tax) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
         this.tax = tax;
     }
-
-    // Create getters for these properties
 
     public String getName() {
         return name;

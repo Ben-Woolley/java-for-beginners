@@ -11,6 +11,6 @@ public class Product {
      */
 
 
-    // Create getters for these properties
+    // Create a constructor, and create getters for these properties
 
 }
