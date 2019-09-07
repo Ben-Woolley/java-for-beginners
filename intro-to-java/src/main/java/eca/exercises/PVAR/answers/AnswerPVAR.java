@@ -1,6 +1,6 @@
-package eca.exercises.VABO.answers;
+package eca.exercises.PVAR.answers;
 
-public class AnswerVABO {
+public class AnswerPVAR {
 
     public static void main(String[] args) {
         // Define your String, Integer, and Boolean

@@ -1,6 +1,6 @@
-package eca.exercises.VABO;
+package eca.exercises.PVAR;
 
-public class VariablesAndBasicOperators {
+public class PrintingVariables {
 
     public static void main(String[] args) {
         // Define your String, Integer, and Boolean
