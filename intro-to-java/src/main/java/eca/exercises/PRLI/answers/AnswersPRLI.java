@@ -14,7 +14,6 @@ public class AnswersPRLI {
         favouriteFood.add("Pizza");
 
         // Print each food in the list on one line each
-        // for (each String in favouriteFood in sequence
         for (String food : favouriteFood) {
             System.out.println(food);
         }
