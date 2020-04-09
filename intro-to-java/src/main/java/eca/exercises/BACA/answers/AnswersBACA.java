@@ -4,8 +4,7 @@ import eca.util.UserInputUtil;
 
 public class AnswersBACA {
 
-
-    public static void calculate() {
+    public static void main(String[] args) {
         // Use UserInputUtil to take in Integers a and b, and String operator
         Integer a = UserInputUtil.readInteger();
         Integer b = UserInputUtil.readInteger();
@@ -29,10 +28,6 @@ public class AnswersBACA {
         } else {
             System.out.println("Unknown operator " + operation);
         }
-    }
-
-    public static void main(String[] args) {
-        calculate();
     }
 
 }

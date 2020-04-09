@@ -2,8 +2,10 @@ package eca.exercises.SOFD.answers;
 
 public class AnswersSOFD {
 
-    public static Integer sumDigits(Integer toSum) {
+    public static void main(String[] args) {
         // Compute the num of the individual digits in the Integer toSum
+
+        Integer toSum = 12345;
 
         // To be able to get each digit, we need to convert the number to a String
         String numberAsString = toSum.toString();
@@ -22,10 +24,6 @@ public class AnswersSOFD {
             total = total + digitAsInteger;
         }
 
-        return total;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(sumDigits(12345));
+        System.out.println("The sum of the digits in " + toSum + " is " + total);
     }
 }

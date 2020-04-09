@@ -2,7 +2,7 @@ package eca.exercises.BACA;
 
 public class BasicCalculator {
 
-    public static void calculate() {
+    public static void main(String[] args) {
         // Use UserInputUtil to take in Integers a and b, and String operator
 
 
@@ -11,9 +11,5 @@ public class BasicCalculator {
         // Then perform that operation on a and b
         // Print the math operation and the result e.g. 1 + 2 = 3
 
-    }
-
-    public static void main(String[] args) {
-        calculate();
     }
 }

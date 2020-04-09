@@ -5,7 +5,7 @@ public class GuessWhatNumberImThinking {
     static String YOU_WIN = "You Win!";
     static String YOU_LOSE = "You LOSE!";
 
-    public static void guessWhatNumber() {
+    public static void main(String[] args) {
         // Get a random number
 
         // Let the user enter a number
@@ -14,10 +14,5 @@ public class GuessWhatNumberImThinking {
 
         // Print the result
         System.out.println(YOU_LOSE);
-    }
-
-
-    public static void main(String[] args) {
-        guessWhatNumber();
     }
 }
