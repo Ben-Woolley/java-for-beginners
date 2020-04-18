@@ -55,11 +55,11 @@ public class AccountHolder {
     }
 
     public static void main(String[] args) {
-        BankAccount bobsAccount = new BankAccount("Bob", 17582.23, 1);
-        BankAccount geoffsAccount = new BankAccount("Geoff", 5030.01, 2);
+        var bobsAccount = new BankAccount("Bob", 17582.23, 1);
+        var geoffsAccount = new BankAccount("Geoff", 5030.01, 2);
 
-        AccountHolder bob = new AccountHolder(bobsAccount, "07193869294", "EC1V 4EX");
-        AccountHolder geoff = new AccountHolder(geoffsAccount, "07118573273", "EC1V 4AB");
+        var bob = new AccountHolder(bobsAccount, "07193869294", "EC1V 4EX");
+        var geoff = new AccountHolder(geoffsAccount, "07118573273", "EC1V 4AB");
 
         System.out.println(bob.getAccount().getBalance()); // bob.getAccount().getBalance()
         System.out.println(geoff.getAccount().getBalance()); // geoff.getAccount().getBalance()

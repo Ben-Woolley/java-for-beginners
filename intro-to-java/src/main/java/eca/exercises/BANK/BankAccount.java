@@ -35,8 +35,8 @@ public class BankAccount {
 
 
     public static void main(String[] args) {
-        BankAccount myAccount = new BankAccount();
-        BankAccount anotherAccount = new BankAccount();
+        var myAccount = new BankAccount();
+        var anotherAccount = new BankAccount();
 
         System.out.println(myAccount);
         myAccount.withdraw(50.0);

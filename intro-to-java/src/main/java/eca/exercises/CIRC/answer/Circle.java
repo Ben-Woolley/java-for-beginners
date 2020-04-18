@@ -23,7 +23,7 @@ public class Circle {
 
 
     public static void main(String[] args) {
-        Circle myCircle = new Circle(1.0);
+        var myCircle = new Circle(1.0);
 
         System.out.println(myCircle.getArea());
         System.out.println(myCircle.getCircumference());
