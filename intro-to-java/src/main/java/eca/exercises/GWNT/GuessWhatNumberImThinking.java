@@ -2,8 +2,8 @@ package eca.exercises.GWNT;
 
 public class GuessWhatNumberImThinking {
 
-    static String YOU_WIN = "You Win!";
-    static String YOU_LOSE = "You LOSE!";
+    private static String YOU_WIN = "You Win!";
+    private static String YOU_LOSE = "You LOSE!";
 
     public static void main(String[] args) {
         // Get a random number

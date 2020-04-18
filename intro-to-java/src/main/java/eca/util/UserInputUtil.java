@@ -11,12 +11,12 @@ public class UserInputUtil {
     }
 
     public static Integer readInteger() {
-        String lineAsString = SCANNER.nextLine();
+        var lineAsString = SCANNER.nextLine();
         return Integer.parseInt(lineAsString);
     }
 
     public static Double readDouble() {
-        String lineAsString = SCANNER.nextLine();
+        var lineAsString = SCANNER.nextLine();
         return Double.parseDouble(lineAsString);
     }
 }

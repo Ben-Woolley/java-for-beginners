@@ -4,8 +4,8 @@ public class AnswersMAOP {
 
     public static void main(String[] args) {
         // Create 2 Integer variables a and b
-        Integer a = 10;
-        Integer b = 2;
+        var a = 10;
+        var b = 2;
 
         /* Print the result of:
             - Addition

@@ -29,8 +29,8 @@ public class AccountHolder {
     }
 
     public static void main(String[] args) {
-        AccountHolder bob = new AccountHolder();
-        AccountHolder geoff = new AccountHolder();
+        var bob = new AccountHolder();
+        var geoff = new AccountHolder();
 
         System.out.println(bob); // bob.getAccount().getBalance()
         System.out.println(geoff); // geoff.getAccount().getBalance()

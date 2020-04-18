@@ -4,9 +4,9 @@ public class AnswerPVAR {
 
     public static void main(String[] args) {
         // Define your String, Integer, and Boolean
-        String brand = "Hotels.com";            // A String represents text
-        Integer numberOfEmployees = 10000;      // An Integer is a whole number
-        Boolean memberOfExpediaGroup = true;    // A Boolean is a true/false value
+        var brand = "Hotels.com";            // A String represents text
+        var numberOfEmployees = 10000;      // An Integer is a whole number
+        var memberOfExpediaGroup = true;    // A Boolean is a true/false value
 
         // Print them using System.out.println
         System.out.println(brand);
