@@ -19,4 +19,9 @@ public class UserInputUtil {
         var lineAsString = SCANNER.nextLine();
         return Double.parseDouble(lineAsString);
     }
+
+    public static Boolean readBoolean() {
+        var lineAsString = SCANNER.nextLine();
+        return Boolean.parseBoolean(lineAsString);
+    }
 }
