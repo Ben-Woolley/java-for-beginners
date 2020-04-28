@@ -23,9 +23,8 @@ public class Circle {
 
 
     public static void main(String[] args) {
-        var myCircle = new Circle(1.0);
+        var myCircle = new Circle(5.0);
 
-        System.out.println(myCircle.getArea());
-        System.out.println(myCircle.getCircumference());
+        System.out.println("A circle with radius 5 has an area of " + myCircle.getArea() + " and a circumference of " + myCircle.getCircumference());
     }
 }

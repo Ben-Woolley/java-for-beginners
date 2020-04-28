@@ -12,9 +12,6 @@ public class Circle {
 
 
     public static void main(String[] args) {
-        var myCircle = new Circle();
-
-        System.out.println(myCircle); // myCircle.getArea()
-        System.out.println(myCircle); // myCircle.getCircumference
+        
     }
 }
